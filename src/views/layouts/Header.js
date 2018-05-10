@@ -3,44 +3,39 @@ class Header extends Component {
   render() {
     return (
     <section>
-      <nav className=" navbar navbar-expand-md fixed-top navbar-light" style={{'backgroundColor': '#fafafa'}}>
+      <nav className=" navbar navbar-expand-md fixed-top navbar-light header">
       <div className="container">
-        <a className="navbar-brand" href="#">Offcanvas navbar</a>
+        <a className="navbar-brand" href="#"><img src="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/banner/img-logo-5af3b8b39c9d7" className="logo"/></a>
         <button className="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
           <span className="navbar-toggler-icon"></span>
         </button>
-
         <div className="navbar-collapse offcanvas-collapse">
           <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="">Dashboard</a>
-            </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Notifications</a>
+              <a className="nav-link" href="">Kategori</a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Profile</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Switch account</a>
-            </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
-              <div className="dropdown-menu" aria-labelledby="dropdown01">
-                <a className="dropdown-item" href="#">Action</a>
-                <a className="dropdown-item" href="#">Another action</a>
-                <a className="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
+            <input className="form-control mr-sm-2 search-input" type="text" placeholder="Cari produk" aria-label="Search"/>
           </ul>
           <form className="form-inline my-2 my-lg-0">
-            <input className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"/>
-            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item">
+                <a className="nav-link" href="">Daftar</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="">Login</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href=""><img className="icon-header" height="15" src="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/banner/img-wishlist-5af3b60e1250d"/></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href=""><img className="icon-header" height="18" src="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/banner/img-cart-5af3b5e9d06cd"/></a>
+              </li>
+            </ul>
           </form>
         </div>
       </div>
       </nav>
-      <div className="nav-scroller clr-chin box-shadow">
+      <div className="nav-scroller chin shadow-sm">
         <nav className="container nav nav-underline">
           <div className="d-flex nav-block-left">
             <a className="nav-link" href="#">All Promo</a>
