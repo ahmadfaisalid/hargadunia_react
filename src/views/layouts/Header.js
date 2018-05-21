@@ -1,9 +1,19 @@
 import React, { Component } from 'react';
 class Header extends Component {
+  constructor(props) {
+    super(props); 
+    this.state = { overlay: "" };
+  }
+  focusView(){
+    this.setState({ overlay: "overlay" });
+  }
+  unFocusView(){
+    this.setState({ overlay: "" });
+  }
   render() {
     return (
     <section id="hargadunia-nav-inner">
-      <div className="overlay active"></div>
+      <div className={this.state.overlay+" active"}></div>
       <nav className=" navbar navbar-expand-md fixed-top navbar-light header">
       <div className="container">
         <a className="navbar-brand" href="#"><img src="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/banner/img-logo-5af3b8b39c9d7" className="logo"/></a>
@@ -12,7 +22,7 @@ class Header extends Component {
         </button>
         <div className="navbar-collapse offcanvas-collapse">
           <ul className="navbar-nav mr-auto">
-            <li className="nav-item nav-departement mr-lg-2 ml-lg-5 mr-md-2 ml-md-5">
+            <li className="nav-item nav-departement mr-md-2" onMouseOver={this.focusView.bind(this)} onMouseOut={this.unFocusView.bind(this)}>
               <button className="nav-link btn nav-categories" id="cat-menu" type="button">Kategori</button>
               <ul className="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
                 <li className="dropdown-submenu">
@@ -43,7 +53,7 @@ class Header extends Component {
             </li>
             <div className="input-group">
               <div className="input-group-prepend">
-                <button className="btn btn-hg dropdown-toggle btn-cat-search" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
+                <button className="btn btn-hg dropdown-toggle btn-cat-search" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Semua</button>
                 <div className="dropdown-menu">
                   <li className="dropdown-item" >Action</li>
                   <a className="dropdown-item" href="#">Another action</a>
@@ -59,7 +69,7 @@ class Header extends Component {
                   <a className="dropdown-item" href="#">Something else here</a>
                 </div>
               </div>
-              <input className="form-control search-input" type="text" placeholder="Cari produk" aria-label="Search"/>
+              <input onFocus={this.focusView.bind(this)} onBlur={this.unFocusView.bind(this)} className="form-control search-input" type="text" placeholder="Cari produk" aria-label="Search"/>
               <div className="input-group-append">
                 <button className="btn btn-hg" type="button">Go!</button>
               </div>
