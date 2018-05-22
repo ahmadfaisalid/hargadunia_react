@@ -4,7 +4,7 @@ class Contens extends Component {
   render() {
     return (
       <div className="contaner">
-        <h3 className="page-header"><br/></h3>
+        <h3 className="page-header">Ngopo ngapa?<br/></h3>
       </div>
     );
   }
