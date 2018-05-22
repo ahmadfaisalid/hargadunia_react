@@ -4,6 +4,9 @@ html {
 	font-size: 13px;
 	font-family: 'Lato', sans-serif;
 }
+body {
+  padding-top: 94px;
+}
 .navbar-nav {
     display: -webkit-box;
 }
@@ -13,13 +16,21 @@ html {
 	border-bottom: solid 1px #d9d9d9;
 	padding-top: 0px;
 	font-weight: 500;
-	z-index: 201;
+	z-index: 99;
+	-webkit-transition: -webkit-transform .5s ease-in-out;
+    transition: -webkit-transform .5s ease-in-out;
+    -o-transition: -o-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out, -o-transform .5s ease-in-out;
 }
-
+ .search-input {	
+	width:500px !important;
+ }
 .header {
 	background-color: #fafafa;
 	height: 60px;
 	font-weight: 600;
+	z-index: 100;
 }
 
 .logo {
@@ -32,9 +43,6 @@ html {
 .nav-categories {
 	background: #fafafa;
     border-radius: 3px;
-}
-.search-input {
-	width:500px !important;
 }
 .icon-header {
 	margin-right: 4px;
@@ -249,4 +257,8 @@ html {
     opacity: .7;
     z-index: 200;
     display: none;
+}
+.nav-sticky .chin {
+    -webkit-transform: translateY(-33px) translateZ(0);
+    transform: translateY(-33px) translateZ(0);
 }
