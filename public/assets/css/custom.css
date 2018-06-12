@@ -239,9 +239,11 @@ body {
     border-color: #ced4da;
     color: #585858;
 }
-.nav-underline .nav-under:hover,.nav-underline .nav-under:focus,.nav-underline .nav-under:active{
-	color: #ff6f43;
-	background: #fafafa;
+.nav-underline .nav-under:hover,.nav-underline{
+    color: #3b3b3b;
+}
+.nav-underline .nav-under:focus,.nav-under:active{
+    color: #000000;
 }
 #hargadunia-nav-inner .overlay.active {
     display: block;
