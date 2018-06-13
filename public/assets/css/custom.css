@@ -24,7 +24,7 @@ body {
     transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out, -o-transform .5s ease-in-out;
 }
  .search-input {	
-	width:500px !important;
+	width:445px !important;
  }
 .header {
 	background-color: #fafafa;
@@ -263,4 +263,13 @@ body {
 .nav-sticky .chin {
     -webkit-transform: translateY(-33px) translateZ(0);
     transform: translateY(-33px) translateZ(0);
+}
+.auth-button {
+    margin-left:23px;
+    margin-right:23px;
+}
+.delimiter-border {
+    border-left: solid #e0e0e0 1px;
+    height: 27px;
+    margin-top: 5px;
 }
