@@ -104,14 +104,16 @@ trackScrolling = (event) => {
             </ul>
             <div className="form-inline my-2 my-lg-0">
               <ul className="navbar-nav mr-auto">
-                <li className="nav-item">
+                <li className="nav-item auth-button">
+                  <a className="nav-link" href="">Masuk</a>
+                </li>
+                <li className="delimiter-border">
+                </li>
+                <li className="nav-item auth-button">
                   <a className="nav-link" href="">Daftar</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="">Login</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href=""><img className="icon-header" height="15" src="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/banner/img-wishlist-5af3b60e1250d"/></a>
+                  <a className="nav-link" href=""><img className="icon-header" height="16" src="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/banner/img-wishlist-5af3b60e1250d"/></a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href=""><img className="icon-header" height="18" src="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/banner/img-cart-5af3b5e9d06cd"/></a>
