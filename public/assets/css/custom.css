@@ -1,5 +1,5 @@
 /*CUSTOM CSS*/
-/*Navbar*/
+/* Navbar */
 html {
 	font-size: 13px;
 	font-family: 'Lato', sans-serif;
@@ -48,6 +48,12 @@ body {
 	margin-right: 4px;
 }
 /* end navbar */
+/* Button */
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+/* end button*/
 /* custom-btn-color */
 .btn-hg {
   color: #fff;
