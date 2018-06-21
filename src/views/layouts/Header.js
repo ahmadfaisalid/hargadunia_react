@@ -6,7 +6,8 @@ class Header extends Component {
                     overlay: "",
                     navSticky:""
                   };
-    this.lastScrollPos = 0;
+    this.lastScrollPos = 10000;
+
   }
   focusView(){
     this.setState({ overlay: "overlay" });
@@ -40,7 +41,7 @@ trackScrolling = (event) => {
     <section id="hargadunia-nav-inner">
       <div className={this.state.overlay+" active"}></div>
       <div className={this.state.navSticky+" fixed-top"}>
-        <nav className=" navbar navbar-expand-md navbar-light header">
+        <nav className=" navbar navbar-expand-md navbar-light header" id="nv-nav">
         <div className="container">
           <a className="navbar-brand" href="#"><img src="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/banner/img-logo-5af3b8b39c9d7" className="logo"/></a>
           <button className="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
