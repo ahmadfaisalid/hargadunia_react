@@ -6,8 +6,14 @@ class Header extends Component {
                     overlay: "",
                     navSticky:""
                   };
-    this.lastScrollPos = 10000;
-
+    this.lastScrollPos = 100000;
+  }
+  focusViewDropDown(){
+    if(document.getElementById('category').className != 'dropdown-menu show'){
+      this.setState({ overlay: "overlay" });
+    }else{
+      this.setState({ overlay: "" });
+    }
   }
   focusView(){
     this.setState({ overlay: "overlay" });
@@ -17,14 +23,10 @@ class Header extends Component {
   }
 
 componentDidMount() {
-
   document.addEventListener('scroll', this.trackScrolling);
 }
 
 trackScrolling = (event) => {
-  // if(window.pageYOffset > 0){
-
-  // }
   this._navScroll = document.getElementById('nav-scroll');
   if(this.lastScrollPos > window.pageYOffset) {
       this.lastScrollPos = window.pageYOffset
@@ -80,8 +82,8 @@ trackScrolling = (event) => {
               </li>
               <div className="input-group">
                 <div className="input-group-prepend">
-                  <button className="btn btn-hg dropdown-toggle btn-cat-search" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Semua</button>
-                  <div className="dropdown-menu">
+                  <button onMouseUp={this.focusViewDropDown.bind(this)} onBlur={this.unFocusView.bind(this)} className="btn btn-hg dropdown-toggle btn-cat-search" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Semua</button>
+                  <div id="category" className="dropdown-menu">
                     <li className="dropdown-item" >Action</li>
                     <a className="dropdown-item" href="#">Another action</a>
                     <a className="dropdown-item" href="#">Something else here</a>
