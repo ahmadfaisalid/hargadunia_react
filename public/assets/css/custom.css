@@ -7,7 +7,7 @@ body {
   padding-top: 94px;
 }
 
-/* Custom Bootstrap Container */
+/* Custom Bootstrap css */
 @media (min-width: 1200px){
   .container {
       max-width: 92%;
@@ -28,13 +28,33 @@ body {
       max-width: 100%;
   }
 }
-/* End Bootstrap Container */
+/* End Custom Bootstrap css */
 
 /* Swiper Slide Custom */
 .swiper-container {
     border-radius: 3px;
 }
+@media (max-width: 600px){
+    .swiper-container {
+        border-radius: 0px;
+    }
+}
 /* End Swiper Slide Custom */
+
+/* Slide in Home */
+.img-slide{
+    border-radius: 3px;
+}
+@media (max-width: 600px){
+    .container-slide {
+        padding: 0px;
+        margin-top: 0px !important;
+     }
+    .img-slide{
+        border-radius: 0px;
+    }
+}
+/* End Slide in Home */
 
 /* Navbar */
 .navbar {
