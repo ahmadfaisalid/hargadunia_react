@@ -1,11 +1,44 @@
 /*CUSTOM CSS*/
-/* Navbar */
 html {
-	font-size: 13px;
-	font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-family: 'Lato', sans-serif;
 }
 body {
   padding-top: 94px;
+}
+
+/* Custom Bootstrap Container */
+@media (min-width: 1200px){
+  .container {
+      max-width: 92%;
+  }
+}
+@media (max-width: 1199px){
+  .container {
+      max-width: 92%;
+  }
+}
+@media (max-width: 991px){
+  .container {
+      max-width: 100%;
+  }
+}
+@media (max-width: 600px){
+  .container {
+      max-width: 100%;
+  }
+}
+/* End Bootstrap Container */
+
+/* Swiper Slide Custom */
+.swiper-container {
+    border-radius: 3px;
+}
+/* End Swiper Slide Custom */
+
+/* Navbar */
+.navbar {
+    padding: 0px;
 }
 .navbar-nav {
     display: -webkit-box;
