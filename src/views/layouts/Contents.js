@@ -3,10 +3,10 @@ import SliderHome from '../layouts/SliderHome';
 class Contens extends Component {
   render() {
     return (
-      <div className="container mt-4">
-      <SliderHome key="slider-home" />
+      <div>
+        <SliderHome key="slider-home" />
       
-        <h3 className="page-header">Ngopo ngapa?<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></h3>
+        <h3 className="page-header"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></h3>
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
