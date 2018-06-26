@@ -6,7 +6,6 @@ class SliderHome extends Component {
   render() {
     const params = {
       slidesPerView: 2,
-      grabCursor: true,
       autoplay: {
         delay: 6000,
         disableOnInteraction: false
@@ -27,7 +26,8 @@ class SliderHome extends Component {
           slidesPerView: 1,
           spaceBetween: 0
         }
-      }
+      },
+      containerClass: 'swiper-container home-banner-slider' // Replace swiper-container with customized-swiper-container
     }
 
     return(
