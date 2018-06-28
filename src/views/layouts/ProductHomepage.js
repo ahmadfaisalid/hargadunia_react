@@ -13,12 +13,16 @@ class SliderHome extends Component {
         prevEl: '.swiper-button-prev',
       },
       breakpoints: {
-        1200: {
+        1227: {
           slidesPerView: 3,
           spaceBetween: 5
         },
-        576: {
+        921: {
           slidesPerView: 2,
+          spaceBetween: 5
+        },
+        600: {
+          slidesPerView: 1,
           spaceBetween: 5
         }
       },
