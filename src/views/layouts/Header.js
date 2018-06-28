@@ -98,9 +98,9 @@ trackScrolling = (event) => {
                     <a className="dropdown-item" href="#">Something else here</a>
                   </div>
                 </div>
-                <input onFocus={this.focusView.bind(this)} onBlur={this.unFocusView.bind(this)} className="form-control search-input" type="text" placeholder="Cari produk" aria-label="Search"/>
+                <input onFocus={this.focusView.bind(this)} onBlur={this.unFocusView.bind(this)} className="form-control search-input" type="text" placeholder="Cari produk, merk, atau masukkan link Amazon, eBay, Best Buy, atau Walmart disini..." aria-label="Search"/>
                 <div className="input-group-append">
-                  <button className="btn btn-hg" type="button">Go!</button>
+                  <button className="btn btn-hg btn-padding" type="button">Cari</button>
                 </div>
               </div>
               

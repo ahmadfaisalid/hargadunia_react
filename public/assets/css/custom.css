@@ -9,6 +9,9 @@ html {
 body {
   padding-top: 94px;
 }
+::placeholder {
+    color: #b59aa2 !important;
+}
 #hargadunia{
   margin:0 auto;
   width: 100%;
@@ -113,25 +116,19 @@ body {
     max-width: 92.308em;
   }
 }
-@media (min-width: 1200px){
-  
+@media (min-width: 1228px){
   .container {
-      max-width: 92%;
+      max-width: 1228px;
   }
 }
-@media (max-width: 1199px){
+@media (max-width: 1227px){
   .container {
-      max-width: 92%;
+    max-width: 932px;
   }
 }
-@media (max-width: 991px){
+@media (max-width: 931px){
   .container {
-      max-width: 100%;
-  }
-}
-@media (max-width: 600px){
-  .container {
-      max-width: 100%;
+      max-width: 758px;
   }
 }
 /* End Custom Bootstrap css */
@@ -237,9 +234,21 @@ body {
     transition: transform .5s ease-in-out;
     transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out, -o-transform .5s ease-in-out;
 }
- .search-input {	
-	width:445px !important;
- }
+@media (min-width: 1228px){
+  .search-input {	
+     width:502px !important;
+  }
+}
+@media (max-width: 1227px){
+    .search-input {	
+       width:206px !important;
+    }
+}
+@media (max-width: 931px){
+    .search-input {	
+        width:38px !important;
+     }
+}
 .header {
 	background-color: #fafafa;
 	height: 60px;
@@ -266,6 +275,10 @@ body {
 .btn.focus, .btn:focus {
     outline: 0;
     box-shadow: none;
+}
+.btn-padding {
+    padding-left:24px;
+    padding-right: 24px;
 }
 /* end button*/
 /* custom-btn-color */
@@ -337,6 +350,7 @@ body {
 .btn-outline-hg.disabled:hover, .btn-outline-hg:disabled:hover {
   border-color: #ffa88d;
 }
+/* End custom-btn-colo */
 @media (min-width: 768px) {
 	.nav-block-left{
 		width:90%;
