@@ -5,8 +5,8 @@ import 'react-id-swiper/src/styles/css/swiper.css';
 class SliderHome extends Component {
   render() {
     const s_bestSeller = {
-      slidesPerView: 4,
-      spaceBetween: 5,
+      slidesPerView: 5,
+      spaceBetween: 15,
       loop: false,
       navigation: {
         nextEl: '.swiper-button-next',
@@ -26,7 +26,7 @@ class SliderHome extends Component {
           spaceBetween: 5
         }
       },
-      containerClass: 'swiper-container mr-4 s2' // Replace swiper-container with customized-swiper-container
+      containerClass: 'swiper-container s2' // Replace swiper-container with customized-swiper-container
     }
 
     const s_specialPrice = {
@@ -126,58 +126,49 @@ class SliderHome extends Component {
   
 
     return(
-      <section className="container container-slide mt-5">
-
+      <section className="bg-grey">
+          <div className="container container-slide mt-5">
 {/* BEST SELLER -----------------------------------------------------------------------------------------------------------------------------------
 =============================================================================================================================================== */}
-        <div className="header-block">
-          <div className="page-header float-left">Product Best Seller</div>
-          <a href="#" className="float-right see-more-text">
-            <div>See More</div>
-          </a>
-        </div>
-        <div className="row no-gutters mt-1 mb-5">
-          <div className="col-md-9">
-            <ProductList {...s_bestSeller}>
-            {product_BestSeller.map((prd_data) => // Foreach Product Best Seller
-              <div className="prd-box" key={prd_data.id}>
-                <a>
-                  <div className="image-box-product">
-                    <div className="box-img">
-                      <img src ={prd_data.image}/>
-                    </div>
-                  </div>
-                  <div className="prd-meta">
-                    <div className="prd-meta__name" title={prd_data.name}>{prd_data.name}</div>
-                    <div className="prd-meta__price">{prd_data.price}</div>
-                  </div>
-                </a>
-              </div>
-            )}
-            </ProductList>
-          </div>
-          <div className="col-md-3">
-            <div className="promo-prd-box">
-              <a>
-                <div className="image-promo-product">
-                  <img src ="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/see-more/img-hargadunia-best-sellers-5b026bbe24dd2"/>
-                </div>
+            <div className="header-block">
+              <div className="page-header float-left">Product Best Seller</div>
+              <a href="#" className="float-right see-more-text">
+                <div>See More</div>
               </a>
             </div>
-          </div>
-        </div>
+            <div className="row no-gutters mt-1 mb-5">
+              <div className="col-md-12 bg-white">
+                <ProductList {...s_bestSeller}>
+                {product_BestSeller.map((prd_data) => // Foreach Product Best Seller
+                  <div className="prd-box" key={prd_data.id}>
+                    <a>
+                      <div className="image-box-product">
+                        <div className="box-img">
+                          <img src ={prd_data.image}/>
+                        </div>
+                      </div>
+                      <div className="prd-meta">
+                        <div className="prd-meta__name" title={prd_data.name}>{prd_data.name}</div>
+                        <div className="prd-meta__price">{prd_data.price}</div>
+                      </div>
+                    </a>
+                  </div>
+                )}
+                </ProductList>
+              </div>
+            </div>
 
 {/* SPECIAL PRICE --------------------------------------------------------------------------------------------------------------------------------- 
 =============================================================================================================================================== */}
         <div className="header-block">
-          <div className="page-header float-left">Special Price</div>
+          <div className="page-header float-right-left">Special Price</div>
           <a href="#" className="float-right see-more-text">
             <div>See More</div>
           </a>
         </div>
         <div className="row no-gutters mt-1 mb-5">
-          <div className="col-md-9">
-            <ProductList {...s_specialPrice}>
+          <div className="col-md-12 bg-white">
+            <ProductList {...s_bestSeller}>
               {product_SellingPrice.map((prd_data) => // Foreach Product Selling Price
                 <div className="prd-box" key={prd_data.id}>
                   <a>
@@ -195,17 +186,8 @@ class SliderHome extends Component {
               )}
             </ProductList>
           </div>
-          <div className="col-md-3">
-            <div className="promo-prd-box">
-              <a>
-                <div className="image-promo-product">
-                  <img src ="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/see-more/img-hargadunia-special-price-5b026bb1ac15d"/>
-                </div>
-              </a>
-            </div>
-          </div>
         </div>
-        
+        </div>
       </section>
     )
   }
