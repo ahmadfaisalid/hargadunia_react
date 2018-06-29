@@ -31,15 +31,17 @@ class SliderHome extends Component {
     }
 
     return(
-      
-      <section className="container mt-4 container-slide">
-        <SliderHomeHardun {...params}>
-          <a href=""><img className="img-fluid img-slide" src="https://s3.bukalapak.com/uploads/flash_banner/30203/homepage_banner/s-834-352/Banner_A-B_Test_Copy_tbg.jpg.webp"/></a>
-          <a href=""><img className="img-fluid img-slide" src="https://s3.bukalapak.com/uploads/flash_banner/33203/homepage_banner/s-834-352/Banner_A-B_Test_Copy_update2_GAS.jpg.webp"/></a>
-          <a href=""><img className="img-fluid img-slide" src="https://s0.bukalapak.com/uploads/flash_banner/57203/homepage_banner/s-834-352/Banner_A-B_Test_Copy_sapa.jpg.webp"/></a>
-          <a href=""><img className="img-fluid img-slide" src="https://s2.bukalapak.com/uploads/flash_banner/22052/homepage_banner/s-834-352/Banner_A-B_Test.jpg.webp"/></a>
-          <a href=""><img className="img-fluid img-slide" src="https://s4.bukalapak.com/uploads/flash_banner/96203/homepage_banner/s-834-352/Banner_A-B_Test_Copy_%281%29.jpg.webp"/></a>
-        </SliderHomeHardun>
+      <section>
+	      <div className="container mt-4 container-slide">
+	        <SliderHomeHardun {...params}>
+	          <a href=""><img className="img-fluid img-slide" src="https://s3.bukalapak.com/uploads/flash_banner/30203/homepage_banner/s-834-352/Banner_A-B_Test_Copy_tbg.jpg.webp"/></a>
+	          <a href=""><img className="img-fluid img-slide" src="https://s3.bukalapak.com/uploads/flash_banner/33203/homepage_banner/s-834-352/Banner_A-B_Test_Copy_update2_GAS.jpg.webp"/></a>
+	          <a href=""><img className="img-fluid img-slide" src="https://s0.bukalapak.com/uploads/flash_banner/57203/homepage_banner/s-834-352/Banner_A-B_Test_Copy_sapa.jpg.webp"/></a>
+	          <a href=""><img className="img-fluid img-slide" src="https://s2.bukalapak.com/uploads/flash_banner/22052/homepage_banner/s-834-352/Banner_A-B_Test.jpg.webp"/></a>
+	          <a href=""><img className="img-fluid img-slide" src="https://s4.bukalapak.com/uploads/flash_banner/96203/homepage_banner/s-834-352/Banner_A-B_Test_Copy_%281%29.jpg.webp"/></a>
+	        </SliderHomeHardun>
+	      </div>
+	      <div className="line-break"></div>
       </section>
     )
   }

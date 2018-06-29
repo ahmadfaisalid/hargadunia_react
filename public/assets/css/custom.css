@@ -16,6 +16,18 @@ body {
   margin:0 auto;
   width: 100%;
 }
+.bg-2nd {
+  background:#eef5f9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.line-break {
+  height: 4px;
+  background: #e6e6e6;
+  box-shadow: 0px 2px 8px 0px rgba(125, 125, 125, 0.1);
+  position: relative;
+  width: 100%;
+}
 /* Product Box */
 .page-header {
   letter-spacing: 0.5px;
@@ -30,11 +42,19 @@ body {
   margin-bottom: 1rem;
   word-break: break-word;
 }
+.bg-2nd .page-header{
+  border-bottom: 1px solid transparent;
+}
+.bg-2nd .page-header:before {
+  content: "";
+  border-left: 4px solid #ff6f43;
+  margin-right: 8px;
+}
 .see-more-text{
   font-size: 14px;
   color: #ff6f43;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.10);
-  background: #ffffff;
+  background: transparent;
   -webkit-transition: all .1s linear;
   -moz-transition: all .1s linear;
   transition: all .1s linear;
@@ -55,12 +75,22 @@ body {
   overflow: hidden;
   padding: 10px 15px;
   border-radius: 2px;
-  -webkit-transition: all 2s linear;
-  -moz-transition: all 2s linear;
-  transition: all 2s linear;
 }
 .prd-box:hover {
     border-color:  #e2e2e2;
+}
+.invent-slider .prd-box {
+  border: 1px solid #e1e2e8 !important;
+  overflow: hidden;
+  padding: 10px 15px;
+  border-radius: 0px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+.invent-slider .prd-box:hover {
+  border: 1px solid rgba(53, 53, 53, 0.2) !important;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
 }
 .prd-box .image-box-product {
   height: 160px;
@@ -77,6 +107,7 @@ body {
   bottom: 0;
   text-align: center;
   width: 100%;
+  overflow: hidden;
 }
 .prd-box .prd-meta {
     margin-top: 15px;
@@ -98,7 +129,30 @@ body {
   margin-top: 10px;
   letter-spacing: 0.5px;
 }
+.prd-box .prd-meta .prd-meta__price-second {
+  height: 30px;
+  overflow: hidden;
+}
+.prd-box .prd-meta .prd-meta__price-second .prd-disc {
+  color: #cccccc;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  top: 3px;
+  margin-left: 7px;
+}
+.prd-box .prd-meta .prd-meta__price-second .prd-curency-disc {
+  text-decoration: line-through;
+}
 
+.count-rat {
+    font-size: 13px;
+    position: relative;
+    top: 1px;
+    margin-left: 5px;
+    color: #777777;
+    float: right;
+}
 
 /* End product Box */
 
@@ -191,10 +245,24 @@ body {
 .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
     display: none;
 }
+.invent-slider{
+  position: static !important;
+}
+.container-slide{
+  padding-bottom: 20px;
+}
+@media (min-width: 800px){
+  .invent-slider .swiper-button-prev {
+    left:-20px;
+  }
+  .invent-slider .swiper-button-next {
+    right:-20px;
+  }
+}
 @media (max-width: 600px){
-    .swiper-container {
-        border-radius: 0px;
-    }
+  .swiper-container {
+      border-radius: 0px;
+  }
 }
 /* End Swiper Slide Custom */
 
