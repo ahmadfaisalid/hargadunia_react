@@ -25,7 +25,7 @@ class Category extends Component {
           spaceBetween: 5
         }
       },
-      containerClass: 'swiper-container cat-slide mb-4' // Replace swiper-container with customized-swiper-container
+      containerClass: 'swiper-container mb-4' // Replace swiper-container with customized-swiper-container
     }
   
     const product_BestSeller = [{
