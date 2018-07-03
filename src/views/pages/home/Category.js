@@ -78,28 +78,31 @@ class Category extends Component {
       id: 10
     }];
     return (
-      <div className="container">
-        <br/>
-        <div className="header-block">
-          <div className="page-cat-header float-left">Kategori</div>
-        </div>
-        <CategoryList {...s_bestSeller}>
-        {product_BestSeller.map((prd_data) => // Foreach Product Best Seller
-          <div className="cat-box" key={prd_data.id}>
-            <a>
-              <div className="image-box-cat">
-                <div className="box-img">
-                  <img src ={prd_data.image} className="w-100"/>
-                </div>
-              </div>
-              <div className="cat-meta">
-                <div className="cat-meta__name" title={prd_data.name}>{prd_data.name}</div>
-              </div>
-            </a>
+      <section>
+        <div className="container">
+          <br/>
+          <div className="header-block">
+            <div className="page-cat-header float-left">Kategori</div>
           </div>
-        )}
-        </CategoryList>
-      </div>
+          <CategoryList {...s_bestSeller}>
+          {product_BestSeller.map((prd_data) => // Foreach Product Best Seller
+            <div className="cat-box" key={prd_data.id}>
+              <a>
+                <div className="image-box-cat">
+                  <div className="box-img">
+                    <img src ={prd_data.image} className="w-100"/>
+                  </div>
+                </div>
+                <div className="cat-meta">
+                  <div className="cat-meta__name" title={prd_data.name}>{prd_data.name}</div>
+                </div>
+              </a>
+            </div>
+          )}
+          </CategoryList>
+        </div>
+	      <div className="line-break"></div>
+      </section>
     );
   }
 }

@@ -8,7 +8,6 @@ class Contens extends Component {
       <div>
         <SliderHome key="slider-home" />
         <Category/>
-	      <div className="line-break"></div>
         <ProductHomepage key="product-homepage" className="mt-4"/>
         <h3 className="page-header"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></h3>
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
