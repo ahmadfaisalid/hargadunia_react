@@ -406,7 +406,7 @@ body {
   position: static !important;
 }
 .container-slide{
-  padding-bottom: 20px;
+  padding-bottom: 7px;
 }
 @media (min-width: 800px){
   .invent-slider .swiper-button-prev {
@@ -736,7 +736,7 @@ body {
 .cat-box {
     border: 1px solid #ffffff;
     overflow: hidden;
-    padding: 5px 15px;
+    padding: 5px 15px 10px;
     -webkit-transition: all 2s linear;
     -moz-transition: all 2s linear;
     transition: all 2s linear;
