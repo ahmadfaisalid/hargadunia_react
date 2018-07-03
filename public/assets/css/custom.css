@@ -737,7 +737,6 @@ body {
     border: 1px solid #ffffff;
     overflow: hidden;
     padding: 5px 15px;
-    border-radius: 2px;
     -webkit-transition: all 2s linear;
     -moz-transition: all 2s linear;
     transition: all 2s linear;
@@ -747,10 +746,11 @@ body {
     transition: all .24s ease;
 }
 .cat-box:hover {
-    /*border-color: rgba(0,0,0,.12);
-    box-shadow: 0 0 1.3rem 0 rgba(0,0,0,.05);*/
+    border-color: rgba(0,0,0,.12);
+    box-shadow: 0 0 1.3rem 0 rgba(0,0,0,.05);
     text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.637);
     transform: translateY(-4px);
+    border-radius: 3px;
 }
 .cat-box .image-box-cat {
     height: 76px;
@@ -762,10 +762,6 @@ body {
     .cat-box .image-box-cat {
         height: 53px;
     }
-}
-.cat-box .image-box-cat img{
-    width: auto;
-    height: auto;
 }
 .image-box-cat .box-img {
     position: absolute;
