@@ -41,7 +41,6 @@ class SliderHome extends Component {
 	          <a href=""><img className="img-fluid img-slide" src="https://s4.bukalapak.com/uploads/flash_banner/96203/homepage_banner/s-834-352/Banner_A-B_Test_Copy_%281%29.jpg.webp"/></a>
 	        </SliderHomeHardun>
 	      </div>
-	      <div className="line-break"></div>
       </section>
     )
   }
