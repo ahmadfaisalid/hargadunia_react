@@ -349,12 +349,12 @@ body {
 }
 @media (max-width: 1227px){
   .container {
-    max-width: 932px;
+    max-width: 960px;
   }
 }
-@media (max-width: 931px){
+@media (max-width: 959px){
   .container {
-      max-width: 758px;
+      max-width: 742px;
   }
 }
 /* End Custom Bootstrap css */
@@ -422,7 +422,7 @@ body {
   position: static !important;
 }
 .container-slide{
-  padding-bottom: 20px;
+  padding-bottom: 7px;
 }
 @media (min-width: 800px){
   .invent-slider .swiper-button-prev {
@@ -481,12 +481,12 @@ body {
 }
 @media (max-width: 1227px){
     .search-input {	
-       width:206px !important;
+       width:234px !important;
     }
 }
-@media (max-width: 931px){
+@media (max-width: 959px){
     .search-input {	
-        width:38px !important;
+        width:18px !important;
      }
 }
 .header {
@@ -747,3 +747,67 @@ body {
     height: 27px;
     margin-top: 5px;
 }
+
+/* Category Box */
+.cat-box {
+    border: 1px solid #ffffff;
+    overflow: hidden;
+    padding: 5px 15px 10px;
+    -webkit-transition: all 2s linear;
+    -moz-transition: all 2s linear;
+    transition: all 2s linear;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .24s ease;
+}
+.cat-box:hover {
+    border-color: rgba(0,0,0,.12);
+    box-shadow: 0 0 1.3rem 0 rgba(0,0,0,.05);
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.637);
+    transform: translateY(-4px);
+    border-radius: 3px;
+}
+.cat-box .image-box-cat {
+    height: 76px;
+    width: auto;
+    text-align: center;
+    position: relative;
+}
+@media (max-width: 320px){
+    .cat-box .image-box-cat {
+        height: 53px;
+    }
+}
+.image-box-cat .box-img {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+.cat-box .cat-meta {
+    margin-top: 7px;
+}
+.cat-box .cat-meta .cat-meta__name {
+    overflow: hidden;
+    word-wrap: break-word;
+    line-height: 1.8rem;
+    height: 3.5rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 14px;
+    text-align: center;
+}
+.page-cat-header {
+  margin-top: 0.5rem;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
+  color: #777777;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.125;
+  word-break: break-word;
+}
+/* End Category Box */
