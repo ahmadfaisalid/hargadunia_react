@@ -6,7 +6,7 @@ import SliderBrand from '../pages/home/SliderBrand';
 class Contens extends Component {
   render() {
     return (
-      <div react-section="contents">
+      <div className="content-area" react-section="contents">
         <SliderBanner key="slider-banner" />
         <Category/>
         <ProductHomepage key="product-homepage" className="mt-4"/>
