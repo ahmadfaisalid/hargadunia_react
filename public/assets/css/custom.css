@@ -10,11 +10,14 @@ body {
   padding-top: 94px;
 }
 ::placeholder {
-  color: #b59aa2 !important;
+  color: #cccccc !important;
 }
 #hargadunia {
   margin: 0 auto;
   width: 100%;
+}
+.content-area {
+  overflow: hidden;
 }
 .bg-2nd {
   background: #f6f8f9;
@@ -339,6 +342,16 @@ body {
 /* End Product Banner Hargadunia \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\  */
 
 /* Custom Bootstrap css ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.btn-light {
+    color: #888888;
+    background-color: #f5f5f5;
+    border-color: #e6e6e6;
+}
+.btn-light:hover {
+    color: #888888;
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+}
 @media (min-width: 1800px) {
   #hargadunia {
     margin: 0 auto;
@@ -874,3 +887,164 @@ body {
   filter: grayscale(0%);
 }
 /* End Box Brand \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+/* Footer */
+footer{
+  background-color: #fafafa !important;
+  padding: 40px 0px 10px;
+  margin-top:20px;
+  overflow: hidden;
+  border-top: 4px solid #f5f5f5;
+}
+footer .content-link{
+  margin:auto 0px;
+}
+footer .content-img{
+  padding: 30px 0px;
+  border-bottom: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+}
+footer .content-about{
+  padding:30px 0px; 
+  color: #777777;
+}
+footer .ftr-about-us{
+  line-height: 20px;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+}
+footer .ftr-copyright{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: #777777;
+  font-size: 12px;
+  border-top: 1px solid #e8e8e8;
+}
+footer .ftr-block{
+  width: 20%;
+  display: inline-flex;
+  float: left;
+  margin-bottom: 20px;
+}
+footer .ftr-block .ftr-col{
+  padding-right: 5px;
+}
+footer .ftr-block .ftr-col ul{
+  list-style: none;
+  padding-left: 0px;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  line-height: 22px;
+}
+footer .ftr-block .ftr-col ul a{
+  color: #999999;
+  text-decoration: none;
+  position: relative;
+}
+footer .ftr-block .ftr-col ul a:hover{
+  color: #ff6f43;
+  text-decoration: underline;
+}
+footer .ftr-block .ftr-col ul .ftr-ico-s{
+  margin-bottom: 5px;
+}
+footer .ftr-block .ftr-col ul .ftr-ico-s-m{
+  float: left;
+  margin-right: 1px;
+  margin-bottom: 5px;
+}
+footer .ftr-block .ftr-col ul .ico-s{
+  background: url(../img/social-media/sprites-social.png);
+  background-repeat: no-repeat !important;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  float: left;
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+  background-size: 243px !important;
+}
+footer .ftr-block .ftr-col ul .ico-apsdwn{
+  background: url(../img/social-media/sprites-appsdownload.png);
+  background-repeat: no-repeat !important;
+  height: 35px;
+  width: 101px;
+  display: inline-block;
+  float: left;
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+  background-size: 210px !important;
+}
+footer .ftr-block .ftr-col ul .ico-a-pstore{
+  background-position: 0px 0px;
+}
+footer .ftr-block .ftr-col ul .ico-a-astore{
+  background-position: -109px 0px;
+}
+footer .ftr-block .ftr-col ul .ico-s-line{
+  background-position: -26px 0px;
+}
+footer .ftr-block .ftr-col ul .ico-s-wa{
+  background-position: -2px 0px;
+}
+footer .ftr-block .ftr-col ul .ico-s-bbm{
+  background-position: -51px 0px;
+}
+footer .ftr-block .ftr-col ul .ico-s-fb{
+  background-position: -75px 0px;
+}
+footer .ftr-block .ftr-col ul .ico-s-tw{
+  background-position: -99px 0px;
+}
+footer .ftr-block .ftr-col ul .ico-s-ig{
+  background-position: -124px 0px;
+}
+footer .ftr-block .ftr-col ul .ico-s-yt{
+  background-position: -148px 0px;
+}
+footer .ftr-block .ftr-col ul .ico-s-gp{
+  background-position: -173px 0px;
+}
+footer .ftr-block .ftr-col ul .ico-s-in{
+  background-position: -197px 0px;
+}
+footer .ftr-block .ftr-col ul .ico-s-bl{
+  background-position: -222px 0px;
+}
+footer .img-block-footer{
+  width: 75px;
+  background: #ffffff;
+  padding: 2px 13px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+footer .ftr-ttl{
+  font-size: 14px;
+  font-weight: bold;
+  color: #888888;
+  letter-spacing: 0.3px;
+  margin-bottom: 10px;
+}
+@media (max-width: 960px){
+  footer .ftr-block{
+    width: 25%;
+  }
+}
+@media (max-width: 720px){
+  footer .ftr-block{
+    width: 50%;
+  }
+}
+@media (max-width: 400px){
+  footer .ftr-block{
+    width: 100%;
+  }
+}
+/* End Footer */
