@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
-import SliderHome from '../layouts/SliderHome';
-import ProductHomepage from '../layouts/ProductHomepage';
+import SliderBanner from '../pages/home/SliderBanner';
+import ProductHomepage from '../pages/home/ProductHomepage';
 import Category from '../pages/home/Category';
+import SliderBrand from '../pages/home/SliderBrand';
 class Contens extends Component {
   render() {
     return (
-      <div>
-        <SliderHome key="slider-home" />
+      <div className="content-area" react-section="contents">
+        <SliderBanner key="slider-banner" />
         <Category/>
         <ProductHomepage key="product-homepage" className="mt-4"/>
-        <h3 className="page-header"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></h3>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <SliderBrand key="slider-brand"/>
       </div>
     );
   }

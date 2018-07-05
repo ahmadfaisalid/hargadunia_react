@@ -14,14 +14,17 @@ class Category extends Component {
       breakpoints: {
         1227: {
           slidesPerView: 7,
+          slidesPerGroup: 7,
           spaceBetween: 5
         },
         959: {
           slidesPerView: 5,
+          slidesPerGroup: 5,
           spaceBetween: 5
         },
         600: {
           slidesPerView: 3,
+          slidesPerGroup: 3,
           spaceBetween: 5
         }
       },
@@ -78,11 +81,11 @@ class Category extends Component {
       id: 10
     }];
     return (
-      <section>
+      <section react-section="category">
         <div className="container">
           <br/>
           <div className="header-block">
-            <div className="page-cat-header float-left">Kategori</div>
+            <div className="page-cat-header float-left">Kategori Product</div>
           </div>
           <CategoryList {...s_bestSeller}>
           {product_BestSeller.map((prd_data) => // Foreach Product Best Seller
@@ -101,7 +104,7 @@ class Category extends Component {
           )}
           </CategoryList>
         </div>
-	      <div className="line-break"></div>
+        <div className="line-break"></div>
       </section>
     );
   }

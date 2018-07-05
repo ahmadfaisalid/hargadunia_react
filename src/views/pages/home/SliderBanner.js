@@ -4,7 +4,7 @@ import 'react-id-swiper/src/styles/css/swiper.css';
 
 class SliderHome extends Component {
   render() {
-    const params = {
+    const s_banner = {
       slidesPerView: 2,
       autoplay: {
         delay: 6000,
@@ -31,9 +31,9 @@ class SliderHome extends Component {
     }
 
     return(
-      <section>
+      <section react-section="sliderHome">
 	      <div className="container mt-4 container-slide">
-	        <SliderHomeHardun {...params}>
+	        <SliderHomeHardun {...s_banner}>
 	          <a href=""><img className="img-fluid img-slide" src="https://s3.bukalapak.com/uploads/flash_banner/30203/homepage_banner/s-834-352/Banner_A-B_Test_Copy_tbg.jpg.webp"/></a>
 	          <a href=""><img className="img-fluid img-slide" src="https://s3.bukalapak.com/uploads/flash_banner/33203/homepage_banner/s-834-352/Banner_A-B_Test_Copy_update2_GAS.jpg.webp"/></a>
 	          <a href=""><img className="img-fluid img-slide" src="https://s0.bukalapak.com/uploads/flash_banner/57203/homepage_banner/s-834-352/Banner_A-B_Test_Copy_sapa.jpg.webp"/></a>

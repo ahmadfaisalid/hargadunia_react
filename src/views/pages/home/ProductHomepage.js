@@ -1,60 +1,9 @@
 import React, { Component } from 'react';
 import ProductList from 'react-id-swiper';
 import 'react-id-swiper/src/styles/css/swiper.css';
-import ReactStars from 'react-stars';
+import Product from '../global/Product';
 
 class SliderHome extends Component {
-  flagCountry(country,store,prdfrom) {
-    if (country === "SG") {
-      return (
-        <div className="prd-from">
-          <div className="box-information-1">
-            <div className="from-country"><div className="flag-sg"></div></div>
-            <div className="from-store"><div className="store-name" title={store}>{store}</div></div>
-          </div>
-          <div className="box-information-2" title={"Produk ini dikirim dari "+prdfrom}><span className="info-ico-truck"></span>{prdfrom}
-          </div>
-        </div>
-      );
-    }else if(country === "AU"){
-      return (
-        <div className="prd-from">
-          <div className="box-information-1">
-            <div className="from-country"><div className="flag-au"></div></div>
-            <div className="from-store"><div className="store-name" title={store}>{store}</div></div>
-          </div>
-          <div className="box-information-2" title={"Produk ini dikirim dari "+prdfrom}><span className="info-ico-truck"></span>{prdfrom}
-          </div>
-        </div>
-      );
-    }else if(country === "US") {
-      return (
-        <div className="prd-from">
-          <div className="box-information-1">
-            <div className="from-country"><div className="flag-us"></div></div>
-            <div className="from-store"><div className="store-name" title={store}>{store}</div></div>
-          </div>
-          <div className="box-information-2" title={"Produk ini dikirim dari "+prdfrom}><span className="info-ico-truck"></span>{prdfrom}
-          </div>
-        </div>
-      );
-    }else if(country === "ID") {
-      return (
-        <div className="prd-from">
-          <div className="box-information-1">
-            <div className="from-country"><div className="flag-id"></div></div>
-            <div className="from-store"><div className="store-name" title={store}>{store}</div></div>
-          </div>
-          <div className="box-information-2" title={"Produk ini dikirim dari "+prdfrom}><span className="info-ico-truck"></span>{prdfrom}
-          </div>
-        </div>
-      );
-    }else{
-      return (
-        <div className="prd-from"></div>
-      );
-    }
-  }
   render() {
     const s_productSliderSettings = {
       slidesPerView: 5,
@@ -89,7 +38,7 @@ class SliderHome extends Component {
           spaceBetween: 2
         }
       },
-      containerClass: 'swiper-container invent-slider s2' // Replace swiper-container with customized-swiper-container
+      containerClass: 'swiper-container card-slider s2' // Replace swiper-container with customized-swiper-container
     }
 
     const product_BestSeller = [{
@@ -379,9 +328,8 @@ class SliderHome extends Component {
       image: "https://hargadunia.com/resources/products/img_uploads/tiny_thumb/aW1nX0lydmluc19TYWx0MTA6NTg6MzU_160.jpg",
       id: 7
     }];
-
     return(
-      <div className="bg-2nd">
+      <div className="bg-2nd" react-section="productHomepage">
         <section className="container mt-4">
 
   {/* BEST SELLER -----------------------------------------------------------------------------------------------------------------------------------
@@ -396,41 +344,7 @@ class SliderHome extends Component {
             <div className="col-md-12">
               <ProductList {...s_productSliderSettings}>
               {product_BestSeller.map((prd_data) => // Foreach Product Best Seller
-                <div className="prd-box" key={prd_data.id}>
-                  <a href="#">
-                    <div className="image-box-product">
-                      <div className="box-img">
-                        <img src ={prd_data.image}/>
-                      </div>
-                    </div>
-                    <div className="prd-meta">
-                      <div className="prd-meta__name" title={prd_data.name}>{prd_data.name}</div>
-                      { prd_data.disc != "" && (
-                        <span className="prd-disc">{prd_data.disc}</span>                      
-                      )}
-                      { prd_data.disc != "" ? 
-                      <div className="prd-meta__dataPrice">
-                        <div className="prd-meta__price-second">
-                          <span className="prd-curency-disc" title={prd_data.price}>{prd_data.price}</span>
-                        </div>
-                        <div className="prd-meta__price" title={prd_data.pdisc}>{prd_data.pdisc}</div>
-                        
-                      </div>
-                      :
-                      <div className="prd-meta__dataPrice">
-                        <div className="prd-meta__price" title={prd_data.pdisc}>{prd_data.price}</div>
-                        <div className="prd-meta__price-second">
-                          <span className="prd-curency-disc"></span>
-                        </div>
-                      </div>
-                      }
-                        {this.flagCountry(prd_data.country,prd_data.store,prd_data.prdfrom)}
-                      <div className="prd-data-rat">
-                      <ReactStars className="prd-starRat" count={5} size={18} color2={'#ffce3d'} color1={'#cccccc'} value={3} edit={false} /> <span className="count-rat">(10)</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
+                <Product className="swiper-slide" prd_data={prd_data} key={prd_data.id} />
               )}
               <div className="promo-prd-box">
                 <a>
@@ -458,41 +372,7 @@ class SliderHome extends Component {
             <div className="col-md-12">
               <ProductList {...s_productSliderSettings}>
               {product_SellingPrice.map((prd_data) => // Foreach Product Best Seller
-                <div className="prd-box" key={prd_data.id}>
-                  <a href="#">
-                    <div className="image-box-product">
-                      <div className="box-img">
-                        <img src ={prd_data.image}/>
-                      </div>
-                    </div>
-                    <div className="prd-meta">
-                      <div className="prd-meta__name" title={prd_data.name}>{prd_data.name}</div>
-                      { prd_data.disc != "" && (
-                        <span className="prd-disc">{prd_data.disc}</span>                      
-                      )}
-                      { prd_data.disc != "" ? 
-                      <div className="prd-meta__dataPrice">
-                        <div className="prd-meta__price-second">
-                          <span className="prd-curency-disc" title={prd_data.price}>{prd_data.price}</span>
-                        </div>
-                        <div className="prd-meta__price" title={prd_data.pdisc}>{prd_data.pdisc}</div>
-                        
-                      </div>
-                      :
-                      <div className="prd-meta__dataPrice">
-                        <div className="prd-meta__price" title={prd_data.pdisc}>{prd_data.price}</div>
-                        <div className="prd-meta__price-second">
-                          <span className="prd-curency-disc"></span>
-                        </div>
-                      </div>
-                      }
-                        {this.flagCountry(prd_data.country,prd_data.store,prd_data.prdfrom)}
-                      <div className="prd-data-rat">
-                      <ReactStars className="prd-starRat" count={5} size={18} color2={'#ffce3d'} color1={'#cccccc'} value={3} edit={false} /> <span className="count-rat">(10)</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
+                <Product prd_data={prd_data} key={prd_data.id} />
               )}
               <div className="promo-prd-box">
                 <a>
@@ -521,41 +401,7 @@ class SliderHome extends Component {
             <div className="col-md-12">
               <ProductList {...s_productSliderSettings}>
               {product_FeaturedProduct.map((prd_data) => // Foreach Product Best Seller
-                <div className="prd-box" key={prd_data.id}>
-                  <a href="#">
-                    <div className="image-box-product">
-                      <div className="box-img">
-                        <img src ={prd_data.image}/>
-                      </div>
-                    </div>
-                    <div className="prd-meta">
-                      <div className="prd-meta__name" title={prd_data.name}>{prd_data.name}</div>
-                      { prd_data.disc != "" && (
-                        <span className="prd-disc">{prd_data.disc}</span>                      
-                      )}
-                      { prd_data.disc != "" ? 
-                      <div className="prd-meta__dataPrice">
-                        <div className="prd-meta__price-second">
-                          <span className="prd-curency-disc" title={prd_data.price}>{prd_data.price}</span>
-                        </div>
-                        <div className="prd-meta__price" title={prd_data.pdisc}>{prd_data.pdisc}</div>
-                        
-                      </div>
-                      :
-                      <div className="prd-meta__dataPrice">
-                        <div className="prd-meta__price" title={prd_data.pdisc}>{prd_data.price}</div>
-                        <div className="prd-meta__price-second">
-                          <span className="prd-curency-disc"></span>
-                        </div>
-                      </div>
-                      }
-                        {this.flagCountry(prd_data.country,prd_data.store,prd_data.prdfrom)}
-                      <div className="prd-data-rat">
-                      <ReactStars className="prd-starRat" count={5} size={18} color2={'#ffce3d'} color1={'#cccccc'} value={3} edit={false} /> <span className="count-rat">(10)</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
+                <Product prd_data={prd_data} key={prd_data.id} />
               )}
               <div className="promo-prd-box">
                 <a>
@@ -584,41 +430,7 @@ class SliderHome extends Component {
             <div className="col-md-12">
               <ProductList {...s_productSliderSettings}>
               {product_ShippedWithin3Days.map((prd_data) => // Foreach Product Best Seller
-                <div className="prd-box" key={prd_data.id}>
-                  <a href="#">
-                    <div className="image-box-product">
-                      <div className="box-img">
-                        <img src ={prd_data.image}/>
-                      </div>
-                    </div>
-                    <div className="prd-meta">
-                      <div className="prd-meta__name" title={prd_data.name}>{prd_data.name}</div>
-                      { prd_data.disc != "" && (
-                        <span className="prd-disc">{prd_data.disc}</span>                      
-                      )}
-                      { prd_data.disc != "" ? 
-                      <div className="prd-meta__dataPrice">
-                        <div className="prd-meta__price-second">
-                          <span className="prd-curency-disc" title={prd_data.price}>{prd_data.price}</span>
-                        </div>
-                        <div className="prd-meta__price" title={prd_data.pdisc}>{prd_data.pdisc}</div>
-                        
-                      </div>
-                      :
-                      <div className="prd-meta__dataPrice">
-                        <div className="prd-meta__price" title={prd_data.pdisc}>{prd_data.price}</div>
-                        <div className="prd-meta__price-second">
-                          <span className="prd-curency-disc"></span>
-                        </div>
-                      </div>
-                      }
-                        {this.flagCountry(prd_data.country,prd_data.store,prd_data.prdfrom)}
-                      <div className="prd-data-rat">
-                      <ReactStars className="prd-starRat" count={5} size={18} color2={'#ffce3d'} color1={'#cccccc'} value={3} edit={false} /> <span className="count-rat">(10)</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
+                <Product prd_data={prd_data} key={prd_data.id} />
               )}
               <div className="promo-prd-box">
                 <a>
