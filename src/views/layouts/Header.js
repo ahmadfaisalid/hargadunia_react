@@ -40,7 +40,7 @@ trackScrolling = (event) => {
 
   render() {
     return (
-    <section id="hargadunia-nav-inner">
+    <section react-section="header" id="hargadunia-nav-inner">
       <div className={this.state.overlay+" active"}></div>
       <div className={this.state.navSticky+" fixed-top"}>
         <nav className=" navbar navbar-expand-md navbar-light header" id="nv-nav">
