@@ -3,5 +3,14 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('hargadunia'));
-registerServiceWorker();
+import { BrowserRouter } from 'react-router-dom';
+
+// ReactDOM.render(<App />, document.getElementById('hargadunia'));
+// registerServiceWorker();
+
+ReactDOM.render((
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  ), document.getElementById('hargadunia'));
+ registerServiceWorker();
