@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink, withRouter } from 'react-router-dom';
 class Header extends Component {
   constructor(props) {
     super(props); 
@@ -45,7 +46,9 @@ trackScrolling = (event) => {
       <div className={this.state.navSticky+" fixed-top"}>
         <nav className=" navbar navbar-expand-md navbar-light header" id="nv-nav">
         <div className="container">
-          <a className="navbar-brand" href="#"><img src="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/banner/img-logo-5af3b8b39c9d7" className="logo"/></a>
+        <NavLink className="navbar-brand" to='/'>
+          <img src="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/banner/img-logo-5af3b8b39c9d7" className="logo"/>
+        </NavLink>
           <button className="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -129,7 +132,7 @@ trackScrolling = (event) => {
         <div className="nav-scroller chin shadow-sm" id="nav-scroll">
           <nav className="container nav nav-underline">
             <div className="d-flex nav-block-left">
-              <a className="nav-link nav-under" href="#">All Promo</a>
+              <NavLink className="nav-link nav-under" to='/promo'>All Promo</NavLink>
               <a className="nav-link nav-under" href="#">Sale</a>
               <a className="nav-link nav-under" href="#">Free International Shipping</a>
               <a className="nav-link nav-under" href="#">Ready Stock</a>
