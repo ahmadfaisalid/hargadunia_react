@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import SliderBanner from '../pages/home/SliderBanner';
-import ProductHomepage from '../pages/home/ProductHomepage';
-import Category from '../pages/home/Category';
-import SliderBrand from '../pages/home/SliderBrand';
+import Home from '../pages/home/Home';
 class Contens extends Component {
   render() {
     return (
       <div className="content-area" react-section="contents">
-        <Switch></Switch>
+        <Switch>
+          <Route path='/' component={Home}/>
+        </Switch> 
       </div>
     );
   }
 }
 export default Contens;
+
 
