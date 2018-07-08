@@ -101,7 +101,7 @@ class SliderBrand extends Component {
         </div>
 
         <SliderBrandList {...s_brand}>
-        {brand_List.map((brand_list) => // Foreach Product Best Seller
+        {brand_List.map((brand_list) =>
           <a href={brand_list.link} key={brand_list.id}>
             <div className="box-brand">
               <img className="img-fluid img-slide" src={brand_list.image} alt={brand_list.name}/>
