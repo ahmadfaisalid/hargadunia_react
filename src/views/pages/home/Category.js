@@ -88,7 +88,7 @@ class Category extends Component {
             <div className="page-cat-header float-left">Kategori Product</div>
           </div>
           <CategoryList {...s_bestSeller}>
-          {product_BestSeller.map((prd_data) => // Foreach Product Best Seller
+          {product_BestSeller.map((prd_data) =>
             <div className="cat-box" key={prd_data.id}>
               <a>
                 <div className="image-box-cat">
