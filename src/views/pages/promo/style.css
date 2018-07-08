@@ -86,6 +86,10 @@
     border-bottom-right-radius: 4px;
     box-shadow: inset 0 1px 20px -4px rgba(0, 0, 0, 0.05);
 }
+.promo-page .prm-desc-box .ttl-link {
+    color: #555555;
+    text-decoration-color: #555555;
+}
 .promo-page .promo-sm-title {
     font-size: 12px;
     font-weight: bold;
