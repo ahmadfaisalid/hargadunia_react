@@ -13,6 +13,7 @@ class Contens extends Component {
         <Switch>
           <Route history={this.props.history} exact path='/' component={Home}/>
           <Route path='/promo' component={Promo}/>
+          <Route path='/detail-promo' component={DetailPromo}/>
         </Switch> 
       </div>
     );

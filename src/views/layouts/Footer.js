@@ -57,7 +57,7 @@ class Footer extends Component {
 										<label className="form-check-label" htmlFor="n_wanita">Wanita</label>
 									</div>
 								</div>
-								<button type="submit" className="btn btn-light btn-block">Subscribe</button>
+								<button type="submit" className="btn btn-gray btn-block">Subscribe</button>
 								</form>
 							</div>
 						</div>
