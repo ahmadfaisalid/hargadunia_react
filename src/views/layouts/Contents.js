@@ -20,5 +20,3 @@ class Contens extends Component {
   }
 }
 export default Contens;
-
-
