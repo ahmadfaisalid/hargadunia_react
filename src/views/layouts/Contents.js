@@ -7,6 +7,17 @@ import Promo from '../pages/promo/Promo';
 import DetailPromo from '../pages/promo/DetailPromo';
 
 class Contens extends Component {
+  constructor(props){
+    super(props);
+    this.url = window.location.href;
+  }
+  componentDidUpdate() {
+    this.newUrl = window.location.href;
+    if(this.newUrl !== this.url){
+      this.url = window.location.href;
+      window.scrollTo(0,0);
+    }
+  }
   render() {
     return (
       <div className="content-area" react-section="contents">
