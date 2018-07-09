@@ -102,6 +102,7 @@ body {
   padding: 10px 15px 38px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .03);
   margin-bottom: 2px;
+  text-decoration: none;
 }
 .card-slider .prd-box:hover {
   border: 1px solid rgba(53, 53, 53, 0.2) !important;
@@ -363,7 +364,7 @@ body {
     max-width: 1228px;
   }
 }
-@media (max-width: 1227px) {
+@media (max-width: 992px) {
   .container {
     max-width: 960px;
   }
