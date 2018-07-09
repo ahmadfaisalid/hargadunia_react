@@ -343,7 +343,7 @@ class SliderHome extends Component {
           <div className="row no-gutters mt-1 mb-5">
             <div className="col-md-12">
               <ProductList {...s_productSliderSettings}>
-              {product_BestSeller.map((prd_data) => // Foreach Product Best Seller
+              {product_BestSeller.map((prd_data) => 
                 <Product className="swiper-slide" prd_data={prd_data} key={prd_data.id} />
               )}
               <div className="promo-prd-box">
@@ -371,7 +371,7 @@ class SliderHome extends Component {
           <div className="row no-gutters mt-1 mb-5">
             <div className="col-md-12">
               <ProductList {...s_productSliderSettings}>
-              {product_SellingPrice.map((prd_data) => // Foreach Product Best Seller
+              {product_SellingPrice.map((prd_data) => 
                 <Product prd_data={prd_data} key={prd_data.id} />
               )}
               <div className="promo-prd-box">
@@ -400,7 +400,7 @@ class SliderHome extends Component {
           <div className="row no-gutters mt-1 mb-5">
             <div className="col-md-12">
               <ProductList {...s_productSliderSettings}>
-              {product_FeaturedProduct.map((prd_data) => // Foreach Product Best Seller
+              {product_FeaturedProduct.map((prd_data) =>  
                 <Product prd_data={prd_data} key={prd_data.id} />
               )}
               <div className="promo-prd-box">
@@ -429,7 +429,7 @@ class SliderHome extends Component {
           <div className="row no-gutters mt-1 mb-5">
             <div className="col-md-12">
               <ProductList {...s_productSliderSettings}>
-              {product_ShippedWithin3Days.map((prd_data) => // Foreach Product Best Seller
+              {product_ShippedWithin3Days.map((prd_data) =>  
                 <Product prd_data={prd_data} key={prd_data.id} />
               )}
               <div className="promo-prd-box">
