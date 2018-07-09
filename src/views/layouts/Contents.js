@@ -6,7 +6,7 @@ import Home from '../pages/home/Home';
 import Promo from '../pages/promo/Promo';
 import DetailPromo from '../pages/promo/DetailPromo';
 // ---------------------------------------------------- Product Page
-import Sale from '../pages/p/Sale';
+import ProductPage from '../pages/product/ProductPage';
 // ---------------------------------------------------- Customer
 import AccountInformation from '../pages/customer/AccountInformation';
 import ListAddress from '../pages/customer/ListAddress';
@@ -34,7 +34,7 @@ class Contens extends Component {
           <Route history={this.props.history} exact path='/' component={Home}/>
           <Route path='/promo' component={Promo}/>
           <Route path='/detail-promo' component={DetailPromo}/>
-          <Route path='/sale' component={Sale}/>
+          <Route path='/product' component={ProductPage}/>
           <Route path='/customer' component={AccountInformation} />
           <Route path='/address' component={ListAddress} />
           <Route path='/add-address' component={AddAddress} />
