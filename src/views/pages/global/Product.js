@@ -56,41 +56,39 @@ class Product extends Component {
 
   render() {
     return (
-      <div className={this.props.className + " prd-box"} react-section="products">
-        <a href="#">
-          <div className="image-box-product">
-            <div className="box-img">
-              <img src ={this.props.prd_data.image}/>
+      <a href="#"  className={this.props.className + " prd-box"} react-section="products">
+        <div className="image-box-product">
+          <div className="box-img">
+            <img src ={this.props.prd_data.image}/>
+          </div>
+        </div>
+        <div className="prd-meta">
+          <div className="prd-meta__name" title={this.props.prd_data.name}>{this.props.prd_data.name}</div>
+          { this.props.prd_data.disc != "" && (
+            <span className="prd-disc">{this.props.prd_data.disc}</span>                      
+          )}
+          { this.props.prd_data.disc != "" ? 
+          <div className="prd-meta__dataPrice">
+            <div className="prd-meta__price-second">
+              <span className="prd-curency-disc" title={this.props.prd_data.price}>{this.props.prd_data.price}</span>
+            </div>
+            <div className="prd-meta__price" title={this.props.prd_data.pdisc}>{this.props.prd_data.pdisc}</div>
+            
+          </div>
+          :
+          <div className="prd-meta__dataPrice">
+            <div className="prd-meta__price" title={this.props.prd_data.pdisc}>{this.props.prd_data.price}</div>
+            <div className="prd-meta__price-second">
+              <span className="prd-curency-disc"></span>
             </div>
           </div>
-          <div className="prd-meta">
-            <div className="prd-meta__name" title={this.props.prd_data.name}>{this.props.prd_data.name}</div>
-            { this.props.prd_data.disc != "" && (
-              <span className="prd-disc">{this.props.prd_data.disc}</span>                      
-            )}
-            { this.props.prd_data.disc != "" ? 
-            <div className="prd-meta__dataPrice">
-              <div className="prd-meta__price-second">
-                <span className="prd-curency-disc" title={this.props.prd_data.price}>{this.props.prd_data.price}</span>
-              </div>
-              <div className="prd-meta__price" title={this.props.prd_data.pdisc}>{this.props.prd_data.pdisc}</div>
-              
-            </div>
-            :
-            <div className="prd-meta__dataPrice">
-              <div className="prd-meta__price" title={this.props.prd_data.pdisc}>{this.props.prd_data.price}</div>
-              <div className="prd-meta__price-second">
-                <span className="prd-curency-disc"></span>
-              </div>
-            </div>
-            }
-              {this.flagCountry(this.props.prd_data.country,this.props.prd_data.store,this.props.prd_data.prdfrom)}
-            <div className="prd-data-rat">
-            <ReactStars className="prd-starRat" count={5} size={18} color2={'#ffce3d'} color1={'#cccccc'} value={3} edit={false} /> <span className="count-rat">(10)</span>
-            </div>
+          }
+            {this.flagCountry(this.props.prd_data.country,this.props.prd_data.store,this.props.prd_data.prdfrom)}
+          <div className="prd-data-rat">
+          <ReactStars className="prd-starRat" count={5} size={18} color2={'#ffce3d'} color1={'#cccccc'} value={3} edit={false} /> <span className="count-rat">(10)</span>
           </div>
-        </a>
-      </div>
+        </div>
+      </a>
     );
   }
 }
