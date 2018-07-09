@@ -5,6 +5,7 @@ import Home from '../pages/home/Home';
 // ---------------------------------------------------- Promo
 import Promo from '../pages/promo/Promo';
 import DetailPromo from '../pages/promo/DetailPromo';
+import Sale from '../pages/p/Sale';
 
 class Contens extends Component {
   render() {
@@ -14,6 +15,9 @@ class Contens extends Component {
           <Route history={this.props.history} exact path='/' component={Home}/>
           <Route path='/promo' component={Promo}/>
           <Route path='/detail-promo' component={DetailPromo}/>
+
+          {/* Other Page Products */}
+          <Route path='/sale' component={Sale}/>
         </Switch> 
       </div>
     );
