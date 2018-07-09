@@ -21,7 +21,7 @@ class DetailPromo extends Component {
     <section react-section="detail-promo">
     	<div className="container mt-4 promo-page">
 	    	<div className="row">
-	    		<div className="col-md-8">
+	    		<div className="col-md-9">
 	    			<img className="img-fluid img-dtl-promo" src="https://s4.bukalapak.com/uploads/promo_partnerinfo_bloggy/2922/Bloggy_1.jpg" title="" alt=""/>
 	    			<div className="row no-gutters dtl-ttl-block">
 	    				<div className="col-md-3 col-sm-6 inf-dtl">
@@ -52,15 +52,15 @@ Tidak dapat digabung dengan promo lain
 Hanya berlaku 1x per akun</p>
 	    			</div>
 	    		</div>
-	    		<div className="col-md-4 block-other-promo">
+	    		<div className="col-md-3 block-other-promo">
 	    			<NavLink to="/promo" className="btn btn-gray btn-block mb-4">Lihat Promo Lainnya</NavLink>
 	    			{other_promo_List.map((other_promo_List) =>
-	    			<a href="/detail-promo"  key={other_promo_List.id}>
+	    			<NavLink to="/detail-promo"  key={other_promo_List.id}>
 		    			<div className="other-promo-block">
 		    				<img className="img-fluid" src={other_promo_List.image} title="" alt=""/>
 		    				<div className="ttl-other-promo">{other_promo_List.title}</div>
 		    			</div>
-	    			</a>
+	    			</NavLink>
 	    			)}
 	    		</div>
 	    	</div>

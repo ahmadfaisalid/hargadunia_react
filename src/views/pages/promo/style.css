@@ -198,7 +198,7 @@
 	.promo-page .promo-banner{
 		height: 90px;
 	}
-	.promo-page img-bnr{
+	.promo-page .img-bnr{
 		height: 100%;
 		object-fit: cover;
 	}

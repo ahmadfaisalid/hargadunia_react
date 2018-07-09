@@ -86,15 +86,15 @@ class Promo extends Component {
         {promo_List.map((promo_List) =>
           <div className="col-md-4 col-sm-6"  key={promo_List.id}>
             <div className="box-prm">
-              <a href="/detail-promo">
+              <NavLink to="/detail-promo">
                 <div className="prm-img-box">
                   <img className="prm-img" src={promo_List.image} title={promo_List.title} alt={promo_List.title}/>
                 </div>
-              </a>
+              </NavLink>
               <div className="prm-desc-box">
-                <a className="ttl-link" href="/detail-promo">
+                <NavLink className="ttl-link"  to="/detail-promo">
                   <div className="promo-title" title={promo_List.title}>{promo_List.title}</div>
-                </a>
+                </NavLink>
                 <div className="promo-sm-title">Kode Promo</div>
                 <div className="promo-code">{promo_List.code} <button className="btn btn-light btn-copy-code">Salin Kode</button></div>
                 <div className="promo-btn-box">
@@ -103,8 +103,7 @@ class Promo extends Component {
                     <div className="promo-priode">{promo_List.prd}</div>
                   </div>
                   <div className="col-md-5 prm-div-card">
-                    {/* <NavLink strict className="btn btn-hg btn-block" to='/detail-promo'>Lihat Rincian</NavLink> */}
-                    <a href="/detail-promo" className="btn btn-hg btn-block">Lihat Rincian</a>
+                    <NavLink strict className="btn btn-hg btn-block" to="/detail-promo">Lihat Rincian</NavLink>
                   </div>
                   
                 </div>
