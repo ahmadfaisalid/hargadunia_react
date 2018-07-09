@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
+import Sidebar from '../global/Sidebar';
 
 
 class AccountInformation extends Component {
@@ -17,62 +18,7 @@ class AccountInformation extends Component {
       <div react-section="AccountInformation">
         <section className="container mt-4">
           <div className="row mtb-40 ">
-  {/* SIDEBAR -----------------------------------------------------------------------------------------------------------------------------------
-  =============================================================================================================================================== */}
-        
-            <div className="col-md-3 sidebar">
-              <div className="row">
-                <div className="col-md-12">
-                  <div className="col-md-3 avatar float-left"></div>
-                    <span>
-                      <strong>{user.name}</strong><br />
-                      My Account
-                    </span>
-                </div>
-              </div>
-              <hr/>
-
-              <div className="row">
-                <div className="col-md-12">
-                  <div className="widget">
-                    <ul>
-                      <li>
-                        <a className="active" href="#">
-                          <div className="icon float-left"></div>
-                          <span>Account Information</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a className="active" href="#">
-                          <div className="icon float-left"></div>
-                          <span>Address Book</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a className="active" href="#">
-                          <div className="icon float-left"></div>
-                          <span>My Orders</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a className="active" href="#">
-                          <div className="icon float-left"></div>
-                          <span>Gift Cards</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a className="active" href="#">
-                          <div className="icon float-left"></div>
-                          <span>Payment Confirmation</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-
+            <Sidebar/>
   {/* CONTENT INFORMATION --------------------------------------------------------------------------------------------------------------------------------- 
   =============================================================================================================================================== */}
         

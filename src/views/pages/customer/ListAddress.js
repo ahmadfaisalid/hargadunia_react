@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
+import Sidebar from '../global/Sidebar';
 
 
 class ListAddress extends Component {
@@ -40,62 +41,7 @@ class ListAddress extends Component {
       <div react-section="ListAddress">
         <section className="container mt-4">
           <div className="row mtb-40 ">
-  {/* SIDEBAR -----------------------------------------------------------------------------------------------------------------------------------
-  =============================================================================================================================================== */}
-        
-            <div className="col-md-3 sidebar">
-              <div className="row">
-                <div className="col-md-12">
-                  <div className="col-md-3 avatar float-left"></div>
-                    <span>
-                      <strong>{user_data.name}</strong><br />
-                      My Account
-                    </span>
-                </div>
-              </div>
-              <hr/>
-
-              <div className="row">
-                <div className="col-md-12">
-                  <div className="widget">
-                    <ul>
-                      <li>
-                        <a className="active" href="#">
-                          <div className="icon float-left"></div>
-                          <span>Account Information</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a className="active" href="#">
-                          <div className="icon float-left"></div>
-                          <span>Address Book</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a className="active" href="#">
-                          <div className="icon float-left"></div>
-                          <span>My Orders</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a className="active" href="#">
-                          <div className="icon float-left"></div>
-                          <span>Gift Cards</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a className="active" href="#">
-                          <div className="icon float-left"></div>
-                          <span>Payment Confirmation</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-
+            <Sidebar/>
   {/* CONTENT INFORMATION --------------------------------------------------------------------------------------------------------------------------------- 
   =============================================================================================================================================== */}
         
@@ -114,7 +60,7 @@ class ListAddress extends Component {
                             <input type="text" className="form-control" id="" placeholder="Cari Alamat disini.."/> 
                           </div>
                           <div className="col-md-5">
-                            <button type="submit" class="btn btn-light">Tambah Alamat Baru</button>
+                            <a  href="/add-address" class="btn btn-light">Tambah Alamat Baru</a>
                           </div>
                         </div>
                       </form>
@@ -143,8 +89,8 @@ class ListAddress extends Component {
                           <td>{adrs_data.kodepos}</td>
                           <td>
                             <div className="">
-                              <button type="button" class="btn btn-light">Edit</button>&nbsp;&nbsp;
-                              <button type="button" class="btn btn-light">Hapus</button>
+                              <a class="btn btn-light">Edit</a>&nbsp;&nbsp;
+                              <a class="btn btn-light">Hapus</a>
                             </div>
                           </td>
                         </tr>
