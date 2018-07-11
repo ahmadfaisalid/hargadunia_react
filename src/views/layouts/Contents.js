@@ -11,6 +11,7 @@ import AddAddress from '../pages/customer/AddAddress';
 import ListOrder from '../pages/customer/ListOrder';
 import GiftCard from '../pages/customer/GiftCard';
 import OrderDetail from '../pages/customer/OrderDetail';
+import PaymentConfirmation from '../pages/customer/PaymentConfirmation';
 
 class Contens extends Component {
   render() {
@@ -26,6 +27,7 @@ class Contens extends Component {
           <Route path='/order' component={ListOrder} />
           <Route path='/gift-card' component={GiftCard} />
           <Route path='/order-detail' component={OrderDetail} />
+          <Route path='/confirmation' component={PaymentConfirmation} />
         </Switch> 
       </div>
     );

@@ -77,3 +77,13 @@
 .content .table .prd-name{
   width: 200px;
 }
+.content .bank-account{
+  padding: 10px 0px 30px 10px; 
+}
+.content .bank-account .bank-img{
+  width:200px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
