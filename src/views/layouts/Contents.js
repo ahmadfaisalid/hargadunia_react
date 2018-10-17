@@ -15,6 +15,7 @@ import ListOrder from '../pages/customer/ListOrder';
 import GiftCard from '../pages/customer/GiftCard';
 import OrderDetail from '../pages/customer/OrderDetail';
 import ProductDetail from '../pages/DetailProduct/DetailProduct';
+import PaymentConfirmation from '../pages/customer/PaymentConfirmation';
 
 class Contens extends Component {
   constructor(props){
@@ -73,8 +74,8 @@ class Contens extends Component {
           <Route path='/order' component={ListOrder} />
           <Route path='/gift-card' component={GiftCard} />
           <Route path='/order-detail' component={OrderDetail} />
-
           <Route path='/product-detail' component={ProductDetail} />
+          <Route path='/confirmation' component={PaymentConfirmation} />
         </Switch> 
       </div>
     );
