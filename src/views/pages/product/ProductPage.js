@@ -160,8 +160,8 @@ class ProductSale extends Component {
         <div className="col-sm-12 col-md-12 col-lg-10 block-prd-list">
           <div className="row block-title-list ttl-prd">
             <div className="product-list-title"> 
-              <img className="ico-title" src="../assets/img/box.svg" />
-              <span className="ico-text">Hargadunia Sale</span> 
+              <img className={this.props.templateParameter.pageTitleIco_Class} src={this.props.templateParameter.pageTitleIco_Img} />
+              <span className="ico-text">{this.props.templateParameter.pageTitle}</span> 
               <div className="sort-block">
                   <div htmlFor="sort-prd" className="sort-txt d-inline-block">Urutkan : </div>
                   <div className="d-inline-block">

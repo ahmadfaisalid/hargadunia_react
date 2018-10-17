@@ -133,11 +133,11 @@ trackScrolling = (event) => {
           <nav className="container nav nav-underline">
             <div className="d-flex nav-block-left">
               <NavLink className="nav-link nav-under" to='/promo'>All Promo</NavLink>
-              <NavLink className="nav-link nav-under" to='/product'>Sale</NavLink>
-              <a className="nav-link nav-under" href="#">Free International Shipping</a>
-              <a className="nav-link nav-under" href="#">Ready Stock</a>
-              <a className="nav-link nav-under" href="#">New Products</a>
-              <a className="nav-link nav-under" href="#">Under 100K</a>
+              <NavLink className="nav-link nav-under" to='/sale'>Sale</NavLink>
+              <NavLink className="nav-link nav-under" to="/free-international-shipping">Free International Shipping</NavLink>
+              <NavLink className="nav-link nav-under" to="/ready-stock">Ready Stock</NavLink>
+              <NavLink className="nav-link nav-under" to="/new-products">New Products</NavLink>
+              <NavLink className="nav-link nav-under" to="/under-100k">Under 100K</NavLink>
             </div>
             <div className="d-flex nav-block-right">
               <a className="nav-link nav-under" href="#">Orange Membership</a>
