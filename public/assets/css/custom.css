@@ -526,6 +526,7 @@ body {
 .nav-categories {
   background: #fafafa;
   border-radius: 3px;
+  border-color: #e7e9eb;
 }
 .icon-header {
   margin-right: 4px;
