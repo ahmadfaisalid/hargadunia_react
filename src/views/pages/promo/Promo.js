@@ -6,7 +6,7 @@ class Promo extends Component {
     const promo_List = [
     {
       title: "Bayar Tagihan Jadi Lancar, Dapat Cashbacknya Hingga Rp50.000",
-      image: "https://s4.bukalapak.com/uploads/promo_partnerinfo/0682/Promo_Partner.jpg",
+      image: "https://s3.bukalapak.com/uploads/promo_partnerinfo/1314/Promo_Partner-banyaq.jpg",
       start: "2018-07-10",
       end: "2018-07-20",
       code: "BAYARLUNAS",
@@ -14,7 +14,7 @@ class Promo extends Component {
       id: 1
     }, {
       title: "Jalan-Jalan Naik Kereta Api, Dapat Cashback Hingga Rp35.000",
-      image: "https://s2.bukalapak.com/uploads/promo_partnerinfo/5382/Promo_Partner_%281%29.jpg",
+      image: "https://s1.bukalapak.com/uploads/promo_partnerinfo/4624/Promo_Partner-shake.jpg",
       start: "2018-07-10",
       end: "2018-07-20",
       code: "KERETA35",
@@ -22,7 +22,7 @@ class Promo extends Component {
       id: 2
     }, {
       title: "Pesan Pesawat Sekarang, Nikmati Cashback Hingga Rp50.000",
-      image: "https://s4.bukalapak.com/uploads/promo_partnerinfo/0382/Promo_Partner.jpg",
+      image: "https://s2.bukalapak.com/uploads/promo_partnerinfo/8062/Promo_Partner_DANABukaaja.jpg",
       start: "2018-07-10",
       end: "2018-07-20",
       code: "TERBANG50",
@@ -30,7 +30,7 @@ class Promo extends Component {
       id: 3
     }, {
       title: "Bayar Tagihan Jadi Lancar, Dapat Cashbacknya Hingga Rp50.000",
-      image: "https://s4.bukalapak.com/uploads/promo_partnerinfo/0682/Promo_Partner.jpg",
+      image: "https://s2.bukalapak.com/uploads/promo_partnerinfo/8204/Promo_Partner_10Ribu.jpg",
       start: "2018-07-10",
       end: "2018-07-20",
       code: "BAYARLUNAS",
@@ -38,7 +38,7 @@ class Promo extends Component {
       id: 4
     }, {
       title: "Jalan-Jalan Naik Kereta Api, Dapat Cashback Hingga Rp35.000",
-      image: "https://s2.bukalapak.com/uploads/promo_partnerinfo/5382/Promo_Partner_%281%29.jpg",
+      image: "https://s4.bukalapak.com/uploads/promo_partnerinfo/1724/Promo_Partner.jpg",
       start: "2018-07-10",
       end: "2018-07-20",
       code: "KERETA35",
@@ -46,7 +46,7 @@ class Promo extends Component {
       id: 5
     }, {
       title: "Pesan Pesawat Sekarang, Nikmati Cashback Hingga Rp50.000",
-      image: "https://s4.bukalapak.com/uploads/promo_partnerinfo/0382/Promo_Partner.jpg",
+      image: "https://s4.bukalapak.com/uploads/promo_partnerinfo/6034/Promo_Partner.jpg",
       start: "2018-07-10",
       end: "2018-07-20",
       code: "TERBANG50",

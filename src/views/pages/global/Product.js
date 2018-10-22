@@ -85,7 +85,7 @@ class Product extends Component {
           }
             {this.flagCountry(this.props.prd_data.country,this.props.prd_data.store,this.props.prd_data.prdfrom)}
           <div className="prd-data-rat">
-          <ReactStars className="prd-starRat" count={5} size={18} color2={'#ffce3d'} color1={'#cccccc'} value={3} edit={false} /> <span className="count-rat">(10)</span>
+          <ReactStars className="prd-starRat" count={5} size={18} color2={'#f9a623'} color1={'#e1e1e1'} value={3} edit={false} /> <span className="count-rat">3.4</span>
           </div>
         </div>
       </a>

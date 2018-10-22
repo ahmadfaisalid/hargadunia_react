@@ -336,8 +336,8 @@ class SliderHome extends Component {
   =============================================================================================================================================== */}
           <div className="header-block">
             <div className="page-header float-left">Product Best Seller</div>
-            <a href="#" className="float-right see-more-text">
-              <div>See More</div>
+            <a href="#" className="float-right btn see-more-text">
+              See More
             </a>
           </div>
           <div className="row no-gutters mt-1 mb-5">
@@ -349,7 +349,7 @@ class SliderHome extends Component {
               <div className="promo-prd-box">
                 <a>
                   <div className="image-promo-product">
-                    <img src ="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/see-more/img-hargadunia-special-price-5b026bb1ac15d"/>
+                    <img src ="https://d3ol8ih1xbmzso.cloudfront.net/asset/08-2018/see-more/img-hargadunia-best-sellers-5b7261e9f194f"/>
                   </div>
                 </a>
               </div>
@@ -364,8 +364,8 @@ class SliderHome extends Component {
   =============================================================================================================================================== */}
           <div className="header-block">
             <div className="page-header float-left">Special Price</div>
-            <a href="#" className="float-right see-more-text">
-              <div>See More</div>
+            <a href="#" className="float-right btn see-more-text">
+              See More
             </a>
           </div>
           <div className="row no-gutters mt-1 mb-5">
@@ -377,7 +377,7 @@ class SliderHome extends Component {
               <div className="promo-prd-box">
                 <a>
                   <div className="image-promo-product">
-                    <img src ="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/see-more/img-hargadunia-special-price-5b026bb1ac15d"/>
+                    <img src ="https://d3ol8ih1xbmzso.cloudfront.net/asset/08-2018/see-more/img-hargadunia-special-price-5b7261d81da8e"/>
                   </div>
                 </a>
               </div>
@@ -393,8 +393,8 @@ class SliderHome extends Component {
   =============================================================================================================================================== */}
           <div className="header-block">
             <div className="page-header float-left">Product Best Seller</div>
-            <a href="#" className="float-right see-more-text">
-              <div>See More</div>
+            <a href="#" className="float-right btn see-more-text">
+              See More
             </a>
           </div>
           <div className="row no-gutters mt-1 mb-5">
@@ -422,8 +422,8 @@ class SliderHome extends Component {
   =============================================================================================================================================== */}
           <div className="header-block">
             <div className="page-header float-left">Shipped within 3 days</div>
-            <a href="#" className="float-right see-more-text">
-              <div>See More</div>
+            <a href="#" className="float-right btn see-more-text">
+              See More
             </a>
           </div>
           <div className="row no-gutters mt-1 mb-5">
@@ -435,7 +435,7 @@ class SliderHome extends Component {
               <div className="promo-prd-box">
                 <a>
                   <div className="image-promo-product">
-                    <img src ="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/see-more/img-hargadunia-special-price-5b026bb1ac15d"/>
+                    <img src ="https://d3ol8ih1xbmzso.cloudfront.net/asset/08-2018/see-more/img-hargadunia-featured-products-5b7261ca6e9f8"/>
                   </div>
                 </a>
               </div>

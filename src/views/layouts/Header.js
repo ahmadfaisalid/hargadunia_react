@@ -5,7 +5,8 @@ class Header extends Component {
     super(props); 
     this.state = { 
                     overlay: "",
-                    navSticky:""
+                    navSticky:"",
+                    onSearch:""
                   };
     this.lastScrollPos = 100000;
   }
@@ -15,6 +16,18 @@ class Header extends Component {
     }else{
       this.setState({ overlay: "" });
     }
+  }
+  focusSearch(){
+    this.setState({ 
+                    overlay: "overlay",
+                    onSearch: "search-active" 
+                  });
+  }
+  unFocusSearch(){
+    this.setState({ 
+                    overlay: "",
+                    onSearch: "" 
+                  });
   }
   focusView(){
     this.setState({ overlay: "overlay" });
@@ -85,7 +98,7 @@ trackScrolling = (event) => {
               </li>
               <div className="input-group">
                 <div className="input-group-prepend">
-                  <button onMouseUp={this.focusViewDropDown.bind(this)} onBlur={this.unFocusView.bind(this)} className="btn btn-hg dropdown-toggle btn-cat-search" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Semua</button>
+                  <button onMouseUp={this.focusViewDropDown.bind(this)} onBlur={this.unFocusView.bind(this)} className={"btn dropdown-toggle btn-cat-search " + this.state.onSearch} type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Semua</button>
                   <div id="category" className="dropdown-menu">
                     <li className="dropdown-item" >Action</li>
                     <a className="dropdown-item" href="#">Another action</a>
@@ -101,9 +114,9 @@ trackScrolling = (event) => {
                     <a className="dropdown-item" href="#">Something else here</a>
                   </div>
                 </div>
-                <input onFocus={this.focusView.bind(this)} onBlur={this.unFocusView.bind(this)} className="form-control search-input" type="text" placeholder="Cari produk, merk, atau masukkan link Amazon, eBay, Best Buy, atau Walmart disini..." aria-label="Search"/>
+                <input onFocus={this.focusSearch.bind(this)} onBlur={this.unFocusSearch.bind(this)} className="form-control search-input" type="text" placeholder="Cari produk, merk, atau masukkan link Amazon, eBay, Best Buy, atau Walmart disini..." aria-label="Search"/>
                 <div className="input-group-append">
-                  <button className="btn btn-search btn-padding" type="button">Cari</button>
+                  <button className="btn btn-yellow btn-search btn-padding" type="button">Cari</button>
                 </div>
               </div>
               

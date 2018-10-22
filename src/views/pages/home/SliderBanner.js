@@ -34,11 +34,11 @@ class SliderHome extends Component {
       <section react-section="sliderHome">
 	      <div className="container mt-4 container-slide">
 	        <SliderHomeHardun {...s_banner}>
-	          <a href=""><img className="img-fluid img-slide" src="https://s3.bukalapak.com/uploads/flash_banner/30203/homepage_banner/s-834-352/Banner_A-B_Test_Copy_tbg.jpg.webp"/></a>
-	          <a href=""><img className="img-fluid img-slide" src="https://s3.bukalapak.com/uploads/flash_banner/33203/homepage_banner/s-834-352/Banner_A-B_Test_Copy_update2_GAS.jpg.webp"/></a>
-	          <a href=""><img className="img-fluid img-slide" src="https://s0.bukalapak.com/uploads/flash_banner/57203/homepage_banner/s-834-352/Banner_A-B_Test_Copy_sapa.jpg.webp"/></a>
-	          <a href=""><img className="img-fluid img-slide" src="https://s2.bukalapak.com/uploads/flash_banner/22052/homepage_banner/s-834-352/Banner_A-B_Test.jpg.webp"/></a>
-	          <a href=""><img className="img-fluid img-slide" src="https://s4.bukalapak.com/uploads/flash_banner/96203/homepage_banner/s-834-352/Banner_A-B_Test_Copy_%281%29.jpg.webp"/></a>
+	          <a href=""><img className="img-fluid img-slide" src="https://s3.bukalapak.com/uploads/flash_banner/35423/homepage_banner/s-834-352/Banner_A-B_Test_-_ALL_VP_MANTEP.jpg"/></a>
+	          <a href=""><img className="img-fluid img-slide" src="https://s0.bukalapak.com/uploads/flash_banner/50423/homepage_banner/s-834-352/BL_banner_1668x704.jpg"/></a>
+	          <a href=""><img className="img-fluid img-slide" src="https://s1.bukalapak.com/uploads/flash_banner/17423/homepage_banner/s-834-352/Banner_A-B_Test_-_3.jpg"/></a>
+	          <a href=""><img className="img-fluid img-slide" src="https://s2.bukalapak.com/uploads/flash_banner/74423/homepage_banner/s-834-352/Banner_A-B-ShakeLogistic.jpg"/></a>
+	          <a href=""><img className="img-fluid img-slide" src="https://s3.bukalapak.com/uploads/flash_banner/38423/homepage_banner/s-834-352/Banner_A-B_Test_rev2.jpg"/></a>
 	        </SliderHomeHardun>
 	      </div>
       </section>
