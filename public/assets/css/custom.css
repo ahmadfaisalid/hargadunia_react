@@ -13,7 +13,7 @@ body {
   padding-top: 94px;
 }
 ::placeholder {
-  color: #cccccc !important;
+  color: #bbbbbb !important;
 }
 #hargadunia {
   margin: 0 auto;
@@ -803,6 +803,13 @@ body {
   box-shadow: none;
   border-color: #f9a623;
   border-left-color: #f6f6f6;
+}
+.btn-cat-search, .search-input{
+  -webkit-transition: none !important;
+     -moz-transition: none !important;
+      -ms-transition: none !important;
+       -o-transition: none !important;
+          transition: none !important;
 }
 .nav-underline .nav-under:hover,
 .nav-underline {
