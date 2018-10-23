@@ -99,6 +99,7 @@ body {
   border-style: solid;
   border-left: none;
   line-height: 0px;
+  margin-left: 1px;
 }
 /* End Root \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
@@ -785,10 +786,15 @@ body {
   -moz-border-radius: 6px 0 6px 6px;
   border-radius: 6px 0 6px 6px;
 }
+.box-search {
+  position: relative;
+  display: inherit;
+}
 .btn-cat-search {
   background-color: rgb(246, 246, 246);
   border-color: rgb(239, 239, 239);
   color: #585858;
+  border-right-width: 0px;
 }
 .btn-cat-search.search-active {
   border-color: #f9a623;
@@ -797,12 +803,32 @@ body {
 .search-input {
   background: rgb(246, 246, 246);
   border-color: rgb(239, 239, 239);
+  border-left-width: 1px;
+  border-left-color: rgb(239, 239, 239);
+  margin-left: 1px;
 }
 .search-input:focus {
   outline: none;
   box-shadow: none;
   border-color: #f9a623;
-  border-left-color: #f6f6f6;
+  border-left: 1px solid;
+  border-radius: 0px;
+  border-right-width: 0px;
+  padding-right: 25px;
+  border-left-color: rgb(239, 239, 239);
+  margin-left: 1px;
+}
+.x-search {
+  position: absolute;
+  z-index: 3;
+  right: 71px;
+  height: 100%;
+  padding: 0px 8px;
+  padding-top: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #888888;
+  display: none;
 }
 .btn-cat-search, .search-input{
   -webkit-transition: none !important;

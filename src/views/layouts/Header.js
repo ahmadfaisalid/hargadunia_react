@@ -6,7 +6,10 @@ class Header extends Component {
     this.state = { 
                     overlay: "",
                     navSticky:"",
-                    onSearch:""
+                    onSearch:"",
+                    xSearch: "",
+                    inputSearchValue: "",
+                    validate: false
                   };
     this.lastScrollPos = 100000;
   }
@@ -20,14 +23,18 @@ class Header extends Component {
   focusSearch(){
     this.setState({ 
                     overlay: "overlay",
-                    onSearch: "search-active" 
+                    onSearch: "search-active"
                   });
   }
   unFocusSearch(){
-    this.setState({ 
-                    overlay: "",
-                    onSearch: "" 
-                  });
+    if(this.state.validate == false){
+      this.setState({ 
+                      overlay: "",
+                      onSearch: ""
+                    });
+    }else{
+      this.searchTextInput.focus();
+    }
   }
   focusView(){
     this.setState({ overlay: "overlay" });
@@ -35,7 +42,27 @@ class Header extends Component {
   unFocusView(){
     this.setState({ overlay: "" });
   }
-
+  xTextSearch(e){
+    if(e.target.value.length > 0){
+      this.setState({ xSearch: "d-block" });
+    }else{
+      this.setState({ xSearch: "" });
+    }
+    this.setState({ inputSearchValue: e.target.value });
+  }
+  emptyTextSearch(){
+    this.setState({ 
+      inputSearchValue: "", 
+      xSearch: ""
+    });
+    this.searchTextInput.focus();
+  }
+  dontWhite(){
+    this.setState({validate:true});
+  }
+  white(){
+    this.setState({validate:false});
+  }
 componentDidMount() {
   document.addEventListener('scroll', this.trackScrolling);
 }
@@ -114,7 +141,16 @@ trackScrolling = (event) => {
                     <a className="dropdown-item" href="#">Something else here</a>
                   </div>
                 </div>
-                <input onFocus={this.focusSearch.bind(this)} onBlur={this.unFocusSearch.bind(this)} className="form-control search-input" type="text" placeholder="Cari produk, merk, atau masukkan link Amazon, eBay, Best Buy, atau Walmart disini..." aria-label="Search"/>
+                  <input  ref={(input) => { this.searchTextInput = input; }}
+                          value={this.state.inputSearchValue} 
+                          onFocus={this.focusSearch.bind(this)} 
+                          onBlur={this.unFocusSearch.bind(this)} 
+                          onChange={this.xTextSearch.bind(this)} 
+                          className="form-control search-input" 
+                          type="text" 
+                          placeholder="Cari produk, merk, atau masukkan link Amazon, eBay, Best Buy, atau Walmart disini..." 
+                          aria-label="Search"/>
+                  <span className={"x-search " + this.state.xSearch} onClick={this.emptyTextSearch.bind(this)}  onMouseOut={this.white.bind(this)} onMouseOver={this.dontWhite.bind(this)}>&times;</span>
                 <div className="input-group-append">
                   <button className="btn btn-yellow btn-search btn-padding" type="button">Cari</button>
                 </div>
