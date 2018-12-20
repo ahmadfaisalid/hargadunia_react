@@ -94,8 +94,8 @@ trackScrolling = (event) => {
           </button>
           <div className="navbar-collapse offcanvas-collapse">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item nav-departement mr-md-2" onMouseOver={this.focusView.bind(this)} onMouseOut={this.unFocusView.bind(this)}>
-                <button className="nav-link btn nav-categories" id="cat-menu" type="button">Kategori</button>
+              <li className="nav-item nav-dropdown mr-md-2" onMouseOver={this.focusView.bind(this)} onMouseOut={this.unFocusView.bind(this)}>
+                <button className="nav-link btn nav-categories cat-menu" type="button">Kategori</button>
                 <ul className="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
                   <li className="dropdown-submenu">
                     <a  className="dropdown-item" tabIndex="-1" href="#">Electronics & Computers</a>
@@ -167,11 +167,19 @@ trackScrolling = (event) => {
                 <li className="nav-item auth-button">
                   <a className="nav-link" href="">Daftar</a>
                 </li>
-                <li className="nav-item">
+                {/*<li className="nav-item">
                   <a className="nav-link" href=""><img className="icon-header" height="16" src="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/banner/img-wishlist-5af3b60e1250d"/></a>
-                </li>
-                <li className="nav-item">
+                </li> */}
+                <li className="nav-item mr-3">
                   <a className="nav-link" href=""><img className="icon-header" height="18" src="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/banner/img-cart-5af3b5e9d06cd"/></a>
+                </li>
+                <li className="nav-item nav-dropdown mr-md-2" onMouseOver={this.focusView.bind(this)} onMouseOut={this.unFocusView.bind(this)}>
+                  <button className="nav-link btn nav-origin cat-menu" type="button"><img src="/assets/img/origin/all.png" className="pr-1 nav-origin-ico" /> All Origin</button>
+                  <ul className="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                    <a className="dropdown-item" href="#"><img src="/assets/img/origin/us.png" className="pr-2" /> Amerika</a>
+                    <a className="dropdown-item" href="#"><img src="/assets/img/origin/sg.png" className="pr-2" /> Singapura</a>
+                    <a className="dropdown-item" href="#"><img src="/assets/img/origin/au.png" className="pr-2" /> Australia</a>
+                  </ul>
                 </li>
               </ul>
             </div>

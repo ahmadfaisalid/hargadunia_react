@@ -14,7 +14,7 @@ import AddAddress from '../pages/customer/AddAddress';
 import ListOrder from '../pages/customer/ListOrder';
 import GiftCard from '../pages/customer/GiftCard';
 import OrderDetail from '../pages/customer/OrderDetail';
-import ProductDetail from '../pages/DetailProduct/DetailProduct';
+import ProductDetail from '../pages/detailProduct/DetailProduct';
 import PaymentConfirmation from '../pages/customer/PaymentConfirmation';
 
 class Contens extends Component {

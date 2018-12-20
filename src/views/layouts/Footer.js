@@ -146,6 +146,7 @@ class Footer extends Component {
 						<img className="img-block-footer" src="https://hargadunia.com/resources/img/payment-method/Mastercard%20Logo.png"/>
 						<img className="img-block-footer" src="https://hargadunia.com/resources/img/payment-method/Sakuku%20Logo.png"/>
 						<img className="img-block-footer" src="https://hargadunia.com/resources/img/payment-method/Akulaku%20Logo.png"/>
+						<img className="img-block-footer" src="https://hargadunia.com/resources/img/payment-method/Kredivo%20Logo.png"/>
 					</div>
 				</div>
 

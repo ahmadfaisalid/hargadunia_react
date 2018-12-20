@@ -523,7 +523,7 @@ body {
 }
 @media (min-width: 1228px) {
   .search-input {
-    width: 502px !important;
+    width: 410px !important;
   }
 }
 @media (max-width: 1227px) {
@@ -552,6 +552,15 @@ body {
   border-radius: 3px;
   border-color: #e7e9eb;
   background: #ffffff;
+}
+.nav-origin {
+  border-radius: 3px;
+  border-color: white;
+  background: #ffffff;
+}
+.nav-origin-ico {
+  top: -2px;
+  position: relative;
 }
 .icon-header {
   margin-right: 4px;
@@ -688,19 +697,21 @@ body {
   top: 2px;
   position: relative;
 }
-.nav-departement {
+.nav-dropdown {
   position: relative;
 }
-.nav-departement .nav-categories:hover,
-.nav-departement .nav-categories:focus {
+.nav-dropdown .nav-categories:hover,
+.nav-dropdown .nav-categories:focus, 
+.nav-dropdown .nav-origin:hover,
+.nav-dropdown .nav-origin:focus {
   background-color: #f5f5f5;
   border-color: #ced4da;
 }
-.nav-departement #cat-menu {
+.nav-dropdown .cat-menu {
   color: rgba(0, 0, 0, .54);
   font-weight: 500;
 }
-.nav-departement #cat-menu::after {
+.nav-dropdown .cat-menu::after {
   display: inline-block;
   width: 0;
   height: 0;
@@ -714,19 +725,19 @@ body {
   top: 2px;
   position: relative;
 }
-.nav-departement .dropdown-item {
+.nav-dropdown .dropdown-item {
   padding-left: 1rem;
   padding-right: 2rem;
 }
-.nav-departement:hover .dropdown-menu.multi-level {
+.nav-dropdown:hover .dropdown-menu.multi-level {
   display: block;
   border-color: transparent;
   padding: 0.2rem 0;
   margin-top: -1px;
   box-shadow: -1px 2px 12px rgba(0, 0, 0, 0.08);
 }
-.nav-departement .dropdown-item.active,
-.nav-departement .dropdown-item:hover {
+.nav-dropdown .dropdown-item.active,
+.nav-dropdown .dropdown-item:hover {
   color: #fff;
   text-decoration: none;
   background-color: #ff6f43;
