@@ -40,7 +40,9 @@ class Header extends Component {
     this.setState({ overlay: "overlay" });
   }
   unFocusView(){
-    this.setState({ overlay: "" });
+    if(this.state.onSearch == ""){
+      this.setState({ overlay: "" });
+    }
   }
   xTextSearch(e){
     if(e.target.value.length > 0){
