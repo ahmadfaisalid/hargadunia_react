@@ -176,11 +176,11 @@ trackScrolling = (event) => {
                   <a className="nav-link" href=""><img className="icon-header" height="18" src="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/banner/img-cart-5af3b5e9d06cd"/></a>
                 </li>
                 <li className="nav-item nav-dropdown mr-md-2" onMouseOver={this.focusView.bind(this)} onMouseOut={this.unFocusView.bind(this)}>
-                  <button className="nav-link btn nav-origin cat-menu" type="button"><img src="/assets/img/origin/all.png" className="pr-1 nav-origin-ico" /> All Origin</button>
+                  <button className="nav-link btn nav-origin cat-menu" type="button"><img src="/assets/img/origin/all.png" className="pr-1 nav-origin-ico" /> Product All Country</button>
                   <ul className="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                    <a className="dropdown-item" href="#"><img src="/assets/img/origin/us.png" className="pr-2" /> Amerika</a>
-                    <a className="dropdown-item" href="#"><img src="/assets/img/origin/sg.png" className="pr-2" /> Singapura</a>
-                    <a className="dropdown-item" href="#"><img src="/assets/img/origin/au.png" className="pr-2" /> Australia</a>
+                    <a className="dropdown-item" href="#"><img src="/assets/img/origin/us.png" className="pr-2" /> USA Product</a>
+                    <a className="dropdown-item" href="#"><img src="/assets/img/origin/sg.png" className="pr-2" /> Singapore Product</a>
+                    <a className="dropdown-item" href="#"><img src="/assets/img/origin/au.png" className="pr-2" /> Australia Product</a>
                   </ul>
                 </li>
               </ul>
