@@ -163,6 +163,35 @@ trackScrolling = (event) => {
         </div>
         </nav>
         <div className="nav-scroller chin shadow-sm" id="nav-scroll">
+          <li className="nav-item nav-dropdown mr-md-2" onMouseOver={this.focusView.bind(this)} onMouseOut={this.unFocusView.bind(this)}>
+            <button className="nav-link btn nav-categories cat-menu" type="button">Kategori</button>
+            <ul className="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+              <li className="dropdown-submenu">
+                <a  className="dropdown-item" tabIndex="-1" href="#">Electronics & Computers</a>
+                  <ul className="dropdown-menu menu-secondary">
+                    <li className="dropdown-item"><a href="#">Second level Second level</a></li>
+                    <li className="dropdown-item"><a href="#">Second level</a></li>
+                    <li className="dropdown-item"><a href="#">Second level</a></li>
+                  </ul>
+              </li>
+              <li className="dropdown-submenu">
+                <a  className="dropdown-item" tabIndex="-1" href="#">Boxs</a>
+                  <ul className="dropdown-menu menu-secondary">
+                    <li className="dropdown-item"><a href="#">Second level</a></li>
+                    <li className="dropdown-item"><a href="#">Second level</a></li>
+                    <li className="dropdown-item"><a href="#">Second level</a></li>
+                  </ul>
+              </li>
+              <li className="dropdown-submenu">
+                <a  className="dropdown-item" tabIndex="-1" href="#">Home, Garden & Tools</a>
+                  <ul className="dropdown-menu menu-secondary">
+                    <li className="dropdown-item"><a href="#">Second level</a></li>
+                    <li className="dropdown-item"><a href="#">Second level</a></li>
+                    <li className="dropdown-item"><a href="#">Second level</a></li>
+                  </ul>
+              </li>
+            </ul>
+          </li>
           <nav className="container nav nav-underline">
             <div className="d-flex nav-block-left">
               <NavLink className="nav-link nav-under" to='/promo'>All Promo</NavLink>
