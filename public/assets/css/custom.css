@@ -100,6 +100,7 @@ body {
   border-left: none;
   line-height: 0px;
   margin-left: 1px;
+  font-size: 16px;
 }
 /* End Root \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
@@ -523,7 +524,7 @@ body {
 }
 @media (min-width: 1228px) {
   .search-input {
-    width: 340px !important;
+    width: 400px !important;
   }
 }
 @media (max-width: 1227px) {
@@ -543,7 +544,7 @@ body {
   z-index: 100;
 }
 .logo {
-  height: 32px;
+  height: 45px;
 }
 .nav-link {
   color: rgba(0, 0, 0, .54);
@@ -876,8 +877,8 @@ body {
   transform: translateY(-33px) translateZ(0);
 }
 .auth-button {
-  margin-left: 23px;
-  margin-right: 23px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .delimiter-border {
   border-left: solid #e0e0e0 1px;
@@ -1132,3 +1133,46 @@ footer .ftr-ttl{
   }
 }
 /* End Footer */
+
+
+/* Faisal */
+.btn-store-origin {
+  background-color: rgb(246, 246, 246);
+  border-color: rgb(239, 239, 239);
+  color: #585858;
+  border-right-width: 0px;
+  border-left-width: 0px;
+}
+#store-origin{
+  left:unset;
+}
+.btn-cart{
+  padding-left:10px;
+}
+.btn-cart a img{
+  height: 24px;
+}
+.join{
+  font-size: 11px;
+  color: #777777;
+}
+.btn-register{
+  background: #ffa71b;
+  color: white;
+  padding: 1px 10px;
+  margin-left: 5px;
+}
+.btn-register:hover{
+  color: white;
+}
+.btn-sign{
+  color: #777777;
+  margin-right: 5px;
+}
+.btn-sign:hover{
+  color: #343a40;
+  text-decoration: none;
+}
+.chin .nav .nav-link{
+  padding:.5rem .5rem;
+}

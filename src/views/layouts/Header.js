@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
+
+// import cartIcon from './../public/assets/img/flat-icon/online-shopping-cart.png';
+
 class Header extends Component {
   constructor(props) {
     super(props); 
@@ -14,7 +17,7 @@ class Header extends Component {
     this.lastScrollPos = 100000;
   }
   focusViewDropDown(){
-    if(document.getElementById('category').className != 'dropdown-menu show'){
+    if(document.getElementById('category' || 'store-origin').className != 'dropdown-menu show'){
       this.setState({ overlay: "overlay" });
     }else{
       this.setState({ overlay: "" });
@@ -95,36 +98,7 @@ trackScrolling = (event) => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="navbar-collapse offcanvas-collapse">
-            <ul className="navbar-nav mr-auto">
-              <li className="nav-item nav-dropdown mr-md-2" onMouseOver={this.focusView.bind(this)} onMouseOut={this.unFocusView.bind(this)}>
-                <button className="nav-link btn nav-categories cat-menu" type="button">Kategori</button>
-                <ul className="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                  <li className="dropdown-submenu">
-                    <a  className="dropdown-item" tabIndex="-1" href="#">Electronics & Computers</a>
-                      <ul className="dropdown-menu menu-secondary">
-                        <li className="dropdown-item"><a href="#">Second level Second level</a></li>
-                        <li className="dropdown-item"><a href="#">Second level</a></li>
-                        <li className="dropdown-item"><a href="#">Second level</a></li>
-                      </ul>
-                  </li>
-                  <li className="dropdown-submenu">
-                    <a  className="dropdown-item" tabIndex="-1" href="#">Boxs</a>
-                      <ul className="dropdown-menu menu-secondary">
-                        <li className="dropdown-item"><a href="#">Second level</a></li>
-                        <li className="dropdown-item"><a href="#">Second level</a></li>
-                        <li className="dropdown-item"><a href="#">Second level</a></li>
-                      </ul>
-                  </li>
-                  <li className="dropdown-submenu">
-                    <a  className="dropdown-item" tabIndex="-1" href="#">Home, Garden & Tools</a>
-                      <ul className="dropdown-menu menu-secondary">
-                        <li className="dropdown-item"><a href="#">Second level</a></li>
-                        <li className="dropdown-item"><a href="#">Second level</a></li>
-                        <li className="dropdown-item"><a href="#">Second level</a></li>
-                      </ul>
-                  </li>
-                </ul>
-              </li>
+            <ul className="navbar-nav">
               <div className="input-group">
                 <div className="input-group-prepend">
                   <button onMouseUp={this.focusViewDropDown.bind(this)} onBlur={this.unFocusView.bind(this)} className={"btn dropdown-toggle btn-cat-search " + this.state.onSearch} type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Semua</button>
@@ -150,38 +124,38 @@ trackScrolling = (event) => {
                           onChange={this.xTextSearch.bind(this)} 
                           className="form-control search-input" 
                           type="text" 
-                          placeholder="Cari produk, merk, atau masukkan link Amazon, eBay, Best Buy, atau Walmart disini..." 
+                          placeholder="What are you looking for..." 
                           aria-label="Search"/>
                   <span className={"x-search " + this.state.xSearch} onClick={this.emptyTextSearch.bind(this)}  onMouseOut={this.white.bind(this)} onMouseOver={this.dontWhite.bind(this)}>&times;</span>
+                
+                  <div className="input-group-prepend">
+                    <button onMouseUp={this.focusViewDropDown.bind(this)} onBlur={this.unFocusView.bind(this)} className={"btn dropdown-toggle btn-store-origin " + this.state.onSearch} type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Store Origin</button>
+                    <div id="store-origin" className="dropdown-menu">
+                      <a className="dropdown-item" href="#">All Origin</a>
+                      <a className="dropdown-item" href="#">USA</a>
+                      <a className="dropdown-item" href="#">Singapore</a>
+                      <a className="dropdown-item" href="#">Australia</a>
+                    </div>
+                  </div>
+
                 <div className="input-group-append">
-                  <button className="btn btn-yellow btn-search btn-padding" type="button">Cari</button>
+                  <button className="btn btn-yellow btn-search" type="button"><i className="fa fa-search"></i></button>
                 </div>
               </div>
               
             </ul>
             <div className="form-inline my-2 my-lg-0">
-              <ul className="navbar-nav mr-auto">
+              <ul className="navbar-nav">
+                 
+                <li className="nav-item btn-cart">
+                  <a className="nav-link" href=""><img className="icon-header" height="18" src="assets/img/flat-icon/online-shopping-cart.png"/></a>
+                </li>
+
                 <li className="nav-item auth-button">
-                  <a className="nav-link" href="">Masuk</a>
-                </li>
-                <li className="delimiter-border">
-                </li>
-                <li className="nav-item auth-button">
-                  <a className="nav-link" href="">Daftar</a>
-                </li>
-                {/*<li className="nav-item">
-                  <a className="nav-link" href=""><img className="icon-header" height="16" src="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/banner/img-wishlist-5af3b60e1250d"/></a>
-                </li> */}
-                <li className="nav-item mr-3">
-                  <a className="nav-link" href=""><img className="icon-header" height="18" src="https://d3ol8ih1xbmzso.cloudfront.net/asset/05-2018/banner/img-cart-5af3b5e9d06cd"/></a>
-                </li>
-                <li className="nav-item nav-dropdown mr-md-2" onMouseOver={this.focusView.bind(this)} onMouseOut={this.unFocusView.bind(this)}>
-                  <button className="nav-link btn nav-origin cat-menu" type="button"><img src="/assets/img/origin/all.png" className="pr-1 nav-origin-ico" /> Product All Country</button>
-                  <ul className="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                    <a className="dropdown-item" href="#"><img src="/assets/img/origin/us.png" className="pr-2" /> USA Product</a>
-                    <a className="dropdown-item" href="#"><img src="/assets/img/origin/sg.png" className="pr-2" /> Singapore Product</a>
-                    <a className="dropdown-item" href="#"><img src="/assets/img/origin/au.png" className="pr-2" /> Australia Product</a>
-                  </ul>
+                  <div className="row justify-content-center">
+                    <div className="col-7"><a className="btn-sign" href="">Sign in</a> | <a className="btn btn-sm btn-register" href="">Create Account</a></div>
+                    <div className="col-7 join">Join Now To Get Voucher !</div>
+                  </div>  
                 </li>
               </ul>
             </div>
