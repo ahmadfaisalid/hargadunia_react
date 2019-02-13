@@ -101,7 +101,7 @@ trackScrolling = (event) => {
             <ul className="navbar-nav">
               <div className="input-group">
                 <div className="input-group-prepend">
-                  <button onMouseUp={this.focusViewDropDown.bind(this)} onBlur={this.unFocusView.bind(this)} className={"btn dropdown-toggle btn-cat-search " + this.state.onSearch} type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Semua</button>
+                  <button onMouseUp={this.focusViewDropDown.bind(this)} onBlur={this.unFocusView.bind(this)} className={"btn dropdown-toggle btn-cat-search " + this.state.onSearch} type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
                   <div id="category" className="dropdown-menu">
                     <li className="dropdown-item" >Action</li>
                     <a className="dropdown-item" href="#">Another action</a>
@@ -126,8 +126,7 @@ trackScrolling = (event) => {
                           type="text" 
                           placeholder="What are you looking for..." 
                           aria-label="Search"/>
-                  <span className={"x-search " + this.state.xSearch} onClick={this.emptyTextSearch.bind(this)}  onMouseOut={this.white.bind(this)} onMouseOver={this.dontWhite.bind(this)}>&times;</span>
-                
+                  
                   <div className="input-group-prepend">
                     <button onMouseUp={this.focusViewDropDown.bind(this)} onBlur={this.unFocusView.bind(this)} className={"btn dropdown-toggle btn-store-origin " + this.state.onSearch} type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Store Origin</button>
                     <div id="store-origin" className="dropdown-menu">
@@ -138,17 +137,29 @@ trackScrolling = (event) => {
                     </div>
                   </div>
 
+                  <span className={"x-search " + this.state.xSearch} onClick={this.emptyTextSearch.bind(this)}  onMouseOut={this.white.bind(this)} onMouseOver={this.dontWhite.bind(this)}>&times;</span>
+
                 <div className="input-group-append">
                   <button className="btn btn-yellow btn-search" type="button"><i className="fa fa-search"></i></button>
                 </div>
               </div>
               
+              <div className="nav-item btn-cart ">
+                <a className="nav-link" href="">
+                 <span className="cart-number">5</span>
+                  <img src="assets/img/flat-icon/online-shopping-cart.png"/>
+                </a>
+              </div>
+
             </ul>
             <div className="form-inline my-2 my-lg-0">
               <ul className="navbar-nav">
                  
-                <li className="nav-item btn-cart">
-                  <a className="nav-link" href=""><img className="icon-header" height="18" src="assets/img/flat-icon/online-shopping-cart.png"/></a>
+                <li className="nav-item btn-cart ">
+                  <a className="nav-link" href="">
+                   <span className="cart-number">5</span>
+                    <img src="assets/img/flat-icon/online-shopping-cart.png"/>
+                  </a>
                 </li>
 
                 <li className="nav-item auth-button">
@@ -163,37 +174,39 @@ trackScrolling = (event) => {
         </div>
         </nav>
         <div className="nav-scroller chin shadow-sm" id="nav-scroll">
-          <li className="nav-item nav-dropdown mr-md-2" onMouseOver={this.focusView.bind(this)} onMouseOut={this.unFocusView.bind(this)}>
-            <button className="nav-link btn nav-categories cat-menu" type="button">Kategori</button>
-            <ul className="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-              <li className="dropdown-submenu">
-                <a  className="dropdown-item" tabIndex="-1" href="#">Electronics & Computers</a>
-                  <ul className="dropdown-menu menu-secondary">
-                    <li className="dropdown-item"><a href="#">Second level Second level</a></li>
-                    <li className="dropdown-item"><a href="#">Second level</a></li>
-                    <li className="dropdown-item"><a href="#">Second level</a></li>
-                  </ul>
-              </li>
-              <li className="dropdown-submenu">
-                <a  className="dropdown-item" tabIndex="-1" href="#">Boxs</a>
-                  <ul className="dropdown-menu menu-secondary">
-                    <li className="dropdown-item"><a href="#">Second level</a></li>
-                    <li className="dropdown-item"><a href="#">Second level</a></li>
-                    <li className="dropdown-item"><a href="#">Second level</a></li>
-                  </ul>
-              </li>
-              <li className="dropdown-submenu">
-                <a  className="dropdown-item" tabIndex="-1" href="#">Home, Garden & Tools</a>
-                  <ul className="dropdown-menu menu-secondary">
-                    <li className="dropdown-item"><a href="#">Second level</a></li>
-                    <li className="dropdown-item"><a href="#">Second level</a></li>
-                    <li className="dropdown-item"><a href="#">Second level</a></li>
-                  </ul>
-              </li>
-            </ul>
-          </li>
           <nav className="container nav nav-underline">
             <div className="d-flex nav-block-left">
+
+              <li className="nav-item nav-dropdown mr-md-2" onMouseOver={this.focusView.bind(this)} onMouseOut={this.unFocusView.bind(this)}>
+                <a className="nav-link nav-under cat-menu"><i className="fa fa-list"></i> Shop Department</a>
+                <ul className="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                  <li className="dropdown-submenu">
+                    <a  className="dropdown-item" tabIndex="-1" href="#">Electronics & Computers</a>
+                      <ul className="dropdown-menu menu-secondary">
+                        <li className="dropdown-item"><a href="#">Second level Second level</a></li>
+                        <li className="dropdown-item"><a href="#">Second level</a></li>
+                        <li className="dropdown-item"><a href="#">Second level</a></li>
+                      </ul>
+                  </li>
+                  <li className="dropdown-submenu">
+                    <a  className="dropdown-item" tabIndex="-1" href="#">Boxs</a>
+                      <ul className="dropdown-menu menu-secondary">
+                        <li className="dropdown-item"><a href="#">Second level</a></li>
+                        <li className="dropdown-item"><a href="#">Second level</a></li>
+                        <li className="dropdown-item"><a href="#">Second level</a></li>
+                      </ul>
+                  </li>
+                  <li className="dropdown-submenu">
+                    <a  className="dropdown-item" tabIndex="-1" href="#">Home, Garden & Tools</a>
+                      <ul className="dropdown-menu menu-secondary">
+                        <li className="dropdown-item"><a href="#">Second level</a></li>
+                        <li className="dropdown-item"><a href="#">Second level</a></li>
+                        <li className="dropdown-item"><a href="#">Second level</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </li>
+
               <NavLink className="nav-link nav-under" to='/promo'>All Promo</NavLink>
               <NavLink className="nav-link nav-under" to='/sale'>Sale</NavLink>
               <NavLink className="nav-link nav-under" to="/free-international-shipping">Free International Shipping</NavLink>
@@ -202,8 +215,10 @@ trackScrolling = (event) => {
               <NavLink className="nav-link nav-under" to="/under-100k">Under 100K</NavLink>
             </div>
             <div className="d-flex nav-block-right">
-              <a className="nav-link nav-under" href="#">Orange Membership</a>
-              <a className="nav-link nav-under" href="#">Jadi Bos</a>
+              <a className="nav-link nav-under text-warning" href="#">Orange Membership</a>
+              <a className="nav-link nav-under text-warning" href="#">Jadi Bos</a>
+              <a className="nav-link nav-under" href="#">Products Request</a>
+              <a className="nav-link nav-under" href="#"><i className="fa fa-question-circle-o"></i> Help</a>
             </div>
           </nav>
         </div>

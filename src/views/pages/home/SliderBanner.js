@@ -5,7 +5,7 @@ import 'react-id-swiper/src/styles/css/swiper.css';
 class SliderHome extends Component {
   render() {
     const s_banner = {
-      slidesPerView: 2,
+      slidesPerView: 1,
       autoplay: {
         delay: 6000,
         disableOnInteraction: false
@@ -32,14 +32,38 @@ class SliderHome extends Component {
 
     return(
       <section react-section="sliderHome">
-	      <div className="container mt-4 container-slide">
-	        <SliderHomeHardun {...s_banner}>
-	          <a href=""><img className="img-fluid img-slide" src="https://s3.bukalapak.com/uploads/flash_banner/35423/homepage_banner/s-834-352/Banner_A-B_Test_-_ALL_VP_MANTEP.jpg"/></a>
-	          <a href=""><img className="img-fluid img-slide" src="https://s0.bukalapak.com/uploads/flash_banner/50423/homepage_banner/s-834-352/BL_banner_1668x704.jpg"/></a>
-	          <a href=""><img className="img-fluid img-slide" src="https://s1.bukalapak.com/uploads/flash_banner/17423/homepage_banner/s-834-352/Banner_A-B_Test_-_3.jpg"/></a>
-	          <a href=""><img className="img-fluid img-slide" src="https://s2.bukalapak.com/uploads/flash_banner/74423/homepage_banner/s-834-352/Banner_A-B-ShakeLogistic.jpg"/></a>
-	          <a href=""><img className="img-fluid img-slide" src="https://s3.bukalapak.com/uploads/flash_banner/38423/homepage_banner/s-834-352/Banner_A-B_Test_rev2.jpg"/></a>
-	        </SliderHomeHardun>
+	      <div className="container mt-4">
+          <div className="container-slide float-left">
+  	        <SliderHomeHardun {...s_banner}>
+              <a href=""><img className="img-fluid img-slide" src="assets/img/slide-banner/slide-1.jpg"/></a>
+              <a href=""><img className="img-fluid img-slide" src="assets/img/slide-banner/slide-2.jpg"/></a>
+            </SliderHomeHardun>
+          </div>
+          <div className="container-side float-left">
+            <div className="col-12 float-left">
+              <a href=""><img className="img-fluid img-slide" src="assets/img/banner/sd-banner-1.jpg"/></a>
+            </div>
+            <div className="col-6 float-left">
+              <a href=""><img className="img-fluid img-slide" src="assets/img/banner/sd-banner-2.jpg"/></a>
+            </div>
+            <div className="col-6 float-left">
+              <a href=""><img className="img-fluid img-slide" src="assets/img/banner/sd-banner-3.jpg"/></a>
+            </div>
+          </div>
+          <div className="float-left mt-2">
+            <div className="col-3 float-left">
+              <a href=""><img className="img-fluid img-slide" src="assets/img/banner/btm-banner-3.jpg"/></a>
+            </div>
+            <div className="col-3 float-left">
+              <a href=""><img className="img-fluid img-slide" src="assets/img/banner/btm-banner-4.jpg"/></a>
+            </div>
+            <div className="col-3 float-left">
+              <a href=""><img className="img-fluid img-slide" src="assets/img/banner/btm-banner-3.jpg"/></a>
+            </div>
+            <div className="col-3 float-left">
+              <a href=""><img className="img-fluid img-slide" src="assets/img/banner/btm-banner-4.jpg"/></a>
+            </div>
+          </div>
 	      </div>
       </section>
     )
